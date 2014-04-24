@@ -1,0 +1,33 @@
+- @no_main_link ||= false
+.fixed
+  %nav.tab-bar
+    - unless @no_main_link
+      %section.tab-bar-section
+        %a{href: "/"} JASON KELLUM
+    %section.right-small
+      %a.right-off-canvas-toggle.menu-icon
+        %span
+%aside.right-off-canvas-menu
+  %ul.off-canvas-list
+    %li
+      %a{href: "/resume"}Resum&eacute;
+    %li
+      %a{href: "/"} Work
+    %li
+      %a.sub{href: "/work/trucknseek"} Truck n Seek
+    %li
+      %a.sub{href: "/work/combofonts"} Combofonts
+    %li
+      %a.sub{href: "/work/spinnaker"} Spinnaker
+    %li
+      %a.sub{href: "/work/metrology"} Metrology
+    %li
+      %a.sub{href: "/work/traverse"} Traverse
+    %li
+      %a.sub{href: "/work/bistro23"} Bistro23
+    %li
+      %a.sub{href: "/work/rumble"} Rumble
+    %li
+      %a.sub{href: "/work/browndog"} Brown Dog Creative
+    %li
+      %a.sub{href: "/work/odysseyridge"} Odyssey Ridge
