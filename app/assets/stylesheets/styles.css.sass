@@ -105,6 +105,7 @@ footer
       @include grid-column(8)
     @media #{$large}
       @include grid-column(6)
+      margin-left: em-calc(525)
     h1, p
       color: white
     p
@@ -196,6 +197,13 @@ footer
     .item-text
       @media #{$large}
         @include grid-column(5)
+.head
+  @media #{$large}
+    background-image: image-url('jason.png')
+    background-size: contain
+    background-repeat: no-repeat
+    height: em-calc(600)
+    margin-top: em-calc(45)
 .content.resume
   padding: em-calc(100 0 50 0)
   ul
