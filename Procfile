@@ -1,1 +1,1 @@
-web: target/start -Dhttp.port=${PORT} ${JAVA_OPTS}
+web: bundle exec rails server thin -p $PORT -e $RACK_ENV
