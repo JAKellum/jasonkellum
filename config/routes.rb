@@ -3,7 +3,7 @@ Portfolio::Application.routes.draw do
   # UI CONTROLLER SETUP
   if Rails.env.development?
     get 'ui/:action', controller: 'ui'
-    get 'ui/' => 'ui#index'
+    get 'ui' => 'ui#index'
 
     get 'work/:action', controller: 'work'
     get 'resume' => 'pages#resume'
