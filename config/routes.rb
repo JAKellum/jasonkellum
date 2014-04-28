@@ -9,7 +9,7 @@ Portfolio::Application.routes.draw do
     get 'resume' => 'pages#resume'
     # get 'work/stuff/traverse' => 'work#traverse'
 
-    root 'pages#home'
+    root :to => 'pages#home'
   end
   # END CONTROLLER
   
