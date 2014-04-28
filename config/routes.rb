@@ -7,7 +7,6 @@ Portfolio::Application.routes.draw do
 
     get 'work/:action', controller: 'work'
     get 'resume' => 'pages#resume'
-    # get 'work/stuff/traverse' => 'work#traverse'
 
     root :to => 'pages#home'
   end
