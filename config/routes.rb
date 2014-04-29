@@ -9,7 +9,7 @@ Portfolio::Application.routes.draw do
     get 'resume' => 'pages#resume'
 
     root :to => 'pages#home'
-end
+
   # END CONTROLLER
   
   # The priority is based upon order of creation: first created -> highest priority.
