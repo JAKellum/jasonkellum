@@ -17,6 +17,6 @@
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+window.onload = function(){ $(document).foundation(); };
 
 $(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=$(this.hash);e=e.length?e:$("[name="+this.hash.slice(1)+"]");if(e.length){$("html,body").animate({scrollTop:e.offset().top},1e3);return false}}})})
