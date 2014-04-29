@@ -1,7 +1,7 @@
 Portfolio::Application.routes.draw do
-  
+
   # UI CONTROLLER SETUP
-  if Rails.env.development?
+
     get 'ui/:action', controller: 'ui'
     get 'ui' => 'ui#index'
 
@@ -9,7 +9,7 @@ Portfolio::Application.routes.draw do
     get 'resume' => 'pages#resume'
 
     root :to => 'pages#home'
-  end
+end
   # END CONTROLLER
   
   # The priority is based upon order of creation: first created -> highest priority.
