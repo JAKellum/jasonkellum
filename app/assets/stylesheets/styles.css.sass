@@ -5,7 +5,7 @@
 @import "foundation/functions"
 @import "foundation_and_overrides"
 
-@font-face
+@font-face  
   font-family: 'CriqueGrotesk-Light'
   src: image-url('2AB117_0_0.eot')
   src: image-url('2AB117_0_0.eot?#iefix') format("embedded-opentype"), image-url('2AB117_0_0.woff') format("woff"), image-url('2AB117_0_0.ttf') format("truetype")
@@ -197,6 +197,13 @@ footer
     .item-text
       @media #{$large}
         @include grid-column(5)
+section#work
+  ul
+    @include block-grid(1)
+    @media #{$medium}
+      @include block-grid(2)
+    @media #{$large}
+      @include block-grid(3)
 .head
   @media #{$large}
     background-image: image-url('jason.png')
