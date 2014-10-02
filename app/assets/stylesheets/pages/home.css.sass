@@ -1,0 +1,69 @@
+@import "foundation"
+
+header
+  width: 100%
+  background-color: #772231
+  height: em-calc(600)
+  -webkit-box-shadow: 0 5px 20px 2px #999999
+  -moz-box-shadow: 0 5px 20px 2px #999999
+  box-shadow: 0 5px 20px 2px #999999
+  position: relative
+section
+  width: 100%
+  background-color: #fafafa
+.head
+  @media #{$large}
+    background-image: image-url('jason.png')
+    background-size: contain
+    background-repeat: no-repeat
+    height: em-calc(600)
+    margin-top: em-calc(45)
+.head, .content, .foot
+  @include grid-row
+  .title
+    @include grid-column(12)
+    margin: em-calc(180 0 0 0)
+    @media #{$medium}
+      @include grid-column(8)
+    @media #{$large}
+      @include grid-column(6)
+      margin-left: em-calc(525)
+    h1, p
+      color: white
+    p
+      font-family: "CriqueGrotesk-Light", sans-serif
+  ul
+    @include grid-column(12)
+    padding-bottom: em-calc(20)
+    li
+      .portfolio-item
+        transition: opacity .25s ease-in-out
+      .portfolio-item:hover
+        opacity: .5
+  .contact
+    @include grid-column(12)
+    padding: em-calc(50 0 0 0)
+    text-align: center
+    .contact-icons
+      padding-top: em-calc(35)
+      a
+        color: white
+      a:hover
+        color: #c5202e
+section#work
+  .content
+    @include grid-row
+  .wrapper
+    @include grid-column(12)
+  ul
+    @include grid-column(12)
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+    @media #{$medium}
+      @include block-grid(2)
+    @media #{$large}
+      @include block-grid(3)
+    img
+      width: 100%

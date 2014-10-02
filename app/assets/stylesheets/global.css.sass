@@ -1,9 +1,43 @@
+@import "foundation"
+
 // Colors
 $jason-red: #c5202e
 $jason-dark-red: #772231
 
+body
+  background-color: $jason-dark-red
+
 // Layout
 .wrapper
-  // +grid-row
+// +grid-row
+.off-canvas-wrap
+  .inner-wrap
+    aside
+      a.sub
+        padding-left: em-calc(30)
+    nav.tab-bar
+      background-color: $jason-dark-red
+      section.tab-bar-section
+        background-color: $jason-dark-red
+        a
+          color: white
+        a:hover
+          color: $jason-red
+      section.right-small
+        background-color: $jason-dark-red
+        border: none
+    aside.right-off-canvas-menu
+      background-color: $jason-dark-red
+      ul
+        li
+          a
+            color: white
+          a:hover
+            background-color: $jason-red
+          a.sub
+            font-family: 'CriqueGrotesk-Light', sans-serif
+            padding-left: em-calc(30)
 
 //
+.hidden
+  visibility: hidden

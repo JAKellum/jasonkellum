@@ -1,0 +1,71 @@
+@import "foundation"
+
+.content
+  padding-top: em-calc(50)
+  .project-nav
+    @include grid-row
+    padding-top: em-calc(20)
+    .prev
+      @include grid-column(5)
+    .next
+      @include grid-column(5,$offset:2)
+      text-align: right
+  .headline
+    @include grid-row
+    border-bottom: 2px #772231 solid
+    margin-bottom: em-calc(50)
+    .heading
+      @include grid-column(6)
+      h1
+        padding-top: em-calc(7)
+    .print
+      @include grid-column(6)
+      text-align: right
+      .button
+        color: white
+        background-color: #772231
+      .button:hover
+        background-color: #c5202e
+  .item
+    @include grid-row
+    margin-bottom: em-calc(40)
+    .coming-soon
+      padding: em-calc(75 0 50 0)
+      h3, h5
+        text-align: center
+    .item-image
+      @include grid-column(12)
+      @media #{$medium}
+        @include grid-column(7)
+      @media #{$large}
+        @include grid-column(8)
+    .item-text
+      @include grid-column(12)
+      h3
+        padding-top: em-calc(20)
+        padding-bottom: em-calc(15)
+      @media #{$medium}
+        padding-top: em-calc(0)
+        @include grid-column(5)
+      @media #{$large}
+        padding-top: em-calc(200)
+        @include grid-column(4)
+  .item.intro
+    margin: em-calc(50 0 75 0)
+    .item-text
+      @media #{$large}
+        padding-top: em-calc(90)
+  .item.phone
+    .item-image
+      @media #{$large}
+        @include grid-column(5,$offset:2)
+    .item-text
+      @media #{$large}
+        @include grid-column(5)
+  .item.tablet
+    .item-image
+      @media #{$large}
+        @include grid-column(6,$offset:1)
+    .item-text
+      @media #{$large}
+        @include grid-column(5)
