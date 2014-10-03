@@ -1,57 +1,30 @@
 header
   width: 100%
   background-color: #dadada
-  height: em-calc(600)
+  height: 100vh
   position: relative
-section
-  width: 100%
-  background-color: #fafafa
-.head, .content, .foot
-  +grid-row
-  .title
-    +grid-column(12)
-    margin: em-calc(180 0 0 0)
-    @media #{$medium}
-      +grid-column(8)
-    @media #{$large}
-      +grid-column(6)
-      margin-left: em-calc(525)
-    h1, p
-      color: $white
-    p
-      font-family: $CGH
-  ul
-    +grid-column(12)
-    padding-bottom: em-calc(20)
-    li
-      .portfolio-item
-        transition: opacity .25s ease-in-out
-      .portfolio-item:hover
-        opacity: .5
-  .contact
-    +grid-column(12)
-    padding: em-calc(50 0 0 0)
-    text-align: center
-    .contact-icons
-      padding-top: em-calc(35)
-      a
-        color: $white
-      a:hover
-        color: $red
-section#work
-  .content
+  section
     +grid-row
-  .wrapper
-    +grid-column(12)
-  ul
-    +grid-column(12)
-    margin: 0
-    padding: 0
-    li
-      list-style: none
+    position: relative
+    top: 40%
+    transform: translateY(-40%)
+    text-align: center
+
+section#work
+  article
+    +grid-row
+    padding-top: 0
     @media #{$medium}
-      +block-grid(2)
-    @media #{$large}
-      +block-grid(3)
-    img
-      width: 100%
+      padding-top: em-calc(20)
+    ul
+      +grid-column(12)
+      margin: 0
+      padding: 0
+      li
+        list-style: none
+      @media #{$medium}
+        +block-grid(2)
+      @media #{$large}
+        +block-grid(3)
+      img
+        width: 100%
