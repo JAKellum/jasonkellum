@@ -7,21 +7,21 @@ section
   width: 100%
   background-color: #fafafa
 .head, .content, .foot
-  @include grid-row
+  +grid-row
   .title
-    @include grid-column(12)
+    +grid-column(12)
     margin: em-calc(180 0 0 0)
     @media #{$medium}
-      @include grid-column(8)
+      +grid-column(8)
     @media #{$large}
-      @include grid-column(6)
+      +grid-column(6)
       margin-left: em-calc(525)
     h1, p
-      color: white
+      color: $white
     p
-      font-family: $CGH, sans-serif
+      font-family: $CGH
   ul
-    @include grid-column(12)
+    +grid-column(12)
     padding-bottom: em-calc(20)
     li
       .portfolio-item
@@ -29,29 +29,29 @@ section
       .portfolio-item:hover
         opacity: .5
   .contact
-    @include grid-column(12)
+    +grid-column(12)
     padding: em-calc(50 0 0 0)
     text-align: center
     .contact-icons
       padding-top: em-calc(35)
       a
-        color: white
+        color: $white
       a:hover
-        color: #c5202e
+        color: $red
 section#work
   .content
-    @include grid-row
+    +grid-row
   .wrapper
-    @include grid-column(12)
+    +grid-column(12)
   ul
-    @include grid-column(12)
+    +grid-column(12)
     margin: 0
     padding: 0
     li
       list-style: none
     @media #{$medium}
-      @include block-grid(2)
+      +block-grid(2)
     @media #{$large}
-      @include block-grid(3)
+      +block-grid(3)
     img
       width: 100%

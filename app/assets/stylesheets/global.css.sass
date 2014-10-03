@@ -1,9 +1,14 @@
-// Colors
-$jason-red: #c5202e
-$jason-dark-red: #772231
+// Mixins
+$white: white
+$red: #c5202e
+$dark-red: #772231
+$CGL: 'CriqueGrotesk-Light', sans-serif
+$CGR: 'CriqueGrotesk-Regular', sans-serif
+$CGH: 'CriqueGrotesk-Heavy', sans-serif
+$CGB: 'CriqueGrotesk-Bold', sans-serif
 
 body
-  background-color: $jason-dark-red
+  background-color: $dark-red
 
 // Layout
 .wrapper
@@ -14,28 +19,26 @@ body
       a.sub
         padding-left: em-calc(30)
     nav.tab-bar
-      background-color: white
+      background-color: $white
       section.tab-bar-section
-        background-color: $jason-dark-red
+        background-color: $dark-red
         a
-          color: white
+          color: $white
         a:hover
-          color: $jason-red
+          color: $red
       section.right-small
-        background-color: $jason-dark-red
+        background-color: $dark-red
         border: none
     aside.right-off-canvas-menu
-      background-color: $jason-dark-red
+      background-color: $dark-red
       ul
         li
           a
-            color: white
+            color: $white
           a:hover
-            background-color: $jason-red
+            background-color: $red
           a.sub
-            font-family: 'CriqueGrotesk-Light', sans-serif
+            font-family: $CGL
             padding-left: em-calc(30)
-
-//
 .hidden
   visibility: hidden

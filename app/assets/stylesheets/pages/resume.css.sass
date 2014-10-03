@@ -7,22 +7,22 @@
       list-style-type: none
   h3
     font-size: em-calc(18)
-    font-family: 'CriqueGrotesk-Bold', sans-serif
+    font-family: $CGB
   h4
     font-size: em-calc(16)
-    font-family: 'CriqueGrotesk-Bold', sans-serif
+    font-family: $CGB
   h5
-    font-family: 'CriqueGrotesk-Bold', sans-serif
+    font-family: $CGB
   .panel-left
-    @include grid-column(12)
+    +grid-column(12)
     @media #{$large}
-      @include grid-column(6)
+      +grid-column(6)
     .education
   .panel-right
-    @include grid-column(12)
+    +grid-column(12)
     padding-top: em-calc(20)
     @media #{$large}
-      @include grid-column(6)
+      +grid-column(6)
       padding-top: em-calc(0)
     .position
       padding-bottom: em-calc(30)
