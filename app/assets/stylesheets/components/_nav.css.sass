@@ -1,7 +1,24 @@
 nav
   position: fixed
-  top: 0
-  right: 0
+  top: 1%
+  right: 2%
   z-index: 2000
+  .ion-navicon
+    font-size: em-calc(50)
+    color: $white
+  .ion-navicon:hover
+    color: $dark-red
+    cursor: pointer
+  img
+    border-radius: 50%
+    max-width: 100px
 .overlay.overlay-slidedown
   z-index: 1000
+  nav
+    p
+      color: $white
+    ul
+      max-width: em-calc(300)
+      margin-top: em-calc(50)
+      li
+        +grid-column(4)

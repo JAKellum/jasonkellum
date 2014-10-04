@@ -1,17 +1,36 @@
 %nav
-  %i#trigger-overlay{:type => "button"} Open Overlay
+  %i.ion-navicon.animated.bounceInDown#trigger-overlay{:type => "button"}
 
 // Open - Close
 .overlay.overlay-slidedown
-  %button.overlay-close{:type => "button"} Close
   %nav
-    %h1 Jason Kellum
+    = image_tag("jason-profile-ignite.jpg")
+    %h3 Jason Kellum
+    %p
+      UI / UX Designer @
+      %a{:href => "http://www.ignitewithus.com", :target => '_blank'} Ignite
     %ul
       %li
-        %a{:href => "#"} Resume
+        %a{:href => "/"}
+          %i.ion-home
+          -# Home
       %li
-        %a{:href => "#"} Github
+        %a{:href => "/resume"}
+          %i.ion-document-text
+          -# Resume
       %li
-        %a{:href => "#"} LinkedIn
+        %a{:href => "mailto:jason.a.kellum@gmail.com"}
+          %i.ion-email
+          -# Email
       %li
-        %a{:href => "#"} Twitter
+        %a{:href => "https://github.com/jakellum", :target => '_blank'}
+          %i.ion-social-github
+          -# Github
+      %li
+        %a{:href => "https://www.linkedin.com/in/jasonkellum", :target => '_blank'}
+          %i.ion-social-linkedin
+          -# LinkedIn
+      %li
+        %a{:href => "https://twitter.com/jasonakellum", :target => '_blank'}
+          %i.ion-social-twitter
+          -# Twitter
