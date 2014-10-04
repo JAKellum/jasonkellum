@@ -1,30 +1,29 @@
 header
   width: 100%
   background-color: #dadada
+  // background-image: url('bg-devices.jpg')
+  // background-repeat: no-repeat
+  // background-size: cover
   height: 100vh
   position: relative
   section
-    +grid-row
+    +grid-column(6,$offset:3)
     position: relative
     top: 40%
     transform: translateY(-40%)
-    text-align: center
-
-section#work
+section
   article
-    +grid-row
-    padding-top: 0
-    @media #{$medium}
-      padding-top: em-calc(20)
     ul
-      +grid-column(12)
       margin: 0
       padding: 0
       li
         list-style: none
+        padding: 0 !important
       @media #{$medium}
-        +block-grid(2)
-      @media #{$large}
         +block-grid(3)
+      @media #{$large}
+        +block-grid(4)
       img
         width: 100%
+.portfolio-item:hover
+  opacity: .5
