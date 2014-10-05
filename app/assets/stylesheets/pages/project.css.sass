@@ -1,69 +1,50 @@
-%article
-  padding-top: em-calc(50)
-  .project-nav
-    +grid-row
-    padding-top: em-calc(20)
-    .prev
-      +grid-column(5)
-    .next
-      +grid-column(5,$offset:2)
-      text-align: right
-  .headline
-    +grid-row
-    border-bottom: 2px $dark-red solid
-    margin-bottom: em-calc(50)
-    .heading
-      +grid-column(6)
-      h1
-        padding-top: em-calc(7)
-    .print
-      +grid-column(6)
-      text-align: right
-      .button
-        color: $white
-        background-color: $dark-red
-      .button:hover
-        background-color: $red
-  .item
-    +grid-row
-    margin-bottom: em-calc(40)
-    .coming-soon
-      padding: em-calc(75 0 50 0)
-      h3, h5
-        text-align: center
-    .item-image
-      +grid-column(12)
-      @media #{$medium}
-        +grid-column(7)
-      @media #{$large}
-        +grid-column(8)
-    .item-text
-      +grid-column(12)
-      h3
-        padding-top: em-calc(20)
-        padding-bottom: em-calc(15)
-      @media #{$medium}
-        padding-top: em-calc(0)
-        +grid-column(5)
-      @media #{$large}
-        padding-top: em-calc(200)
-        +grid-column(4)
-  .item.intro
-    margin: em-calc(50 0 75 0)
-    .item-text
-      @media #{$large}
-        padding-top: em-calc(90)
-  .item.phone
-    .item-image
-      @media #{$large}
-        +grid-column(5,$offset:2)
-    .item-text
-      @media #{$large}
-        +grid-column(5)
-  .item.tablet
-    .item-image
-      @media #{$large}
-        +grid-column(6,$offset:1)
-    .item-text
-      @media #{$large}
-        +grid-column(5)
+section.project
+  article
+    figure.subnav
+      +grid-row
+      padding-top: em-calc(20)
+      padding-left: 1%
+      position: fixed
+      z-index: 100
+      a
+        color: $gray
+        font-size: em-calc(30)
+        padding: em-calc(0 10)
+      a:hover
+        color: $dark-red
+    figure.tablet, figure.intro
+      +grid-row
+      padding-bottom: em-calc(40)
+      .coming-soon
+        padding: em-calc(75 0 50 0)
+        h3, h5
+          text-align: center
+      .item-image
+        +grid-column(12)
+        @media #{$medium}
+          +grid-column(7)
+        @media #{$large}
+          +grid-column(8)
+      .item-text
+        +grid-column(12)
+        h3
+          padding-top: em-calc(20)
+          padding-bottom: em-calc(15)
+        @media #{$medium}
+          padding-top: em-calc(0)
+          +grid-column(5)
+        @media #{$large}
+          padding-top: em-calc(200)
+          +grid-column(4)
+    figure.intro
+      padding-top: em-calc(50)
+      .item-text
+        @media #{$large}
+          padding-top: em-calc(90)
+    figure.phone
+      .item-image
+        @media #{$large}
+          +grid-column(5,$offset:2)
+      .item-text
+        @media #{$large}
+          +grid-column(5)

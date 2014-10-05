@@ -5,7 +5,7 @@ nav
   z-index: 2000
   .ion-navicon
     font-size: em-calc(50)
-    color: $white
+    color: $gray
   .ion-navicon:hover
     color: $dark-red
     cursor: pointer
@@ -15,10 +15,12 @@ nav
 .overlay.overlay-slidedown
   z-index: 1000
   nav
-    p
+    h1, h2, h3, p
       color: $white
     ul
       max-width: em-calc(300)
-      margin-top: em-calc(50)
+      margin-top: em-calc(15)
       li
         +grid-column(4)
+        i
+          font-size: em-calc(42)

@@ -1,28 +1,24 @@
-%article.resume
-  padding: em-calc(100 0 50 0)
-  ul
-    margin: 0
-    padding: em-calc(0 0 20 0)
-    li
-      list-style-type: none
-  h3
-    font-size: em-calc(18)
-    font-family: $CGB
-  h4
-    font-size: em-calc(16)
-    font-family: $CGB
-  h5
-    font-family: $CGB
-  .panel-left
-    +grid-column(12)
-    @media #{$large}
-      +grid-column(6)
-    .education
-  .panel-right
-    +grid-column(12)
-    padding-top: em-calc(20)
-    @media #{$large}
-      +grid-column(6)
-      padding-top: em-calc(0)
-    .position
-      padding-bottom: em-calc(30)
+section.resume
+  article
+    ul
+      margin: 0
+      li
+        list-style-type: none
+    h3
+      font-size: em-calc(18)
+      font-family: $CGB
+    h4
+      font-size: em-calc(16)
+      font-family: $CGB
+    h5
+      font-family: $CGB
+  article.left
+    +grid-column(3)
+    background-color: $red
+    height: 100vh
+    position: fixed
+    figure
+      position: fixed
+      bottom: 0
+  article.right
+    +grid-column(9)
