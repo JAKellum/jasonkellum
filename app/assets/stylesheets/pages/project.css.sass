@@ -12,7 +12,7 @@ section.project
         padding: em-calc(0 10)
       a:hover
         color: $dark-red
-    figure.tablet, figure.intro
+    figure, figure.tablet, figure.intro, figure.phone
       +grid-row
       padding-bottom: em-calc(40)
       .coming-soon
@@ -48,3 +48,7 @@ section.project
       .item-text
         @media #{$large}
           +grid-column(5)
+
+.coming-soon
+  -webkit-animation-delay: 2s
+  animation-delay: 2s

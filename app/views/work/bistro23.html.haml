@@ -1,27 +1,24 @@
-%section.main-section
-  %section
-    %article
-      .project-nav
-        .prev
-          %a{href: "/work/traverse"} &laquo; Traverse
-        .next
-          %a{href: "/work/rumble"} Rumble &raquo;
-      .item.intro
-        .item-text
-          %h2 Bistro23
-          %h5 American Style Bistro (Student Project)
-          %p Bistro 23 is a fine-dining restaurant with an american cuisine menu. Located within the center of the screen are the menu options providing fragment identifer links to other sections of this one-page site, as well as the contrasting logo for brand recognition.
-        .item-image
-          = image_tag("bistro23-devices.png")
-      .item
-        .item-image
-          = image_tag("bistro23-1.jpg")
-        .item-text
-          %h3 Above the Fold
-          %p The entire screen is filled with large-scale imagery of the restaurant, on a rotation timer.
-      .item
-        .item-image
-          = image_tag("bistro23-2.jpg")
-        .item-text
-          %h3 Menu
-          %p  As you scroll down, the menu fixates to the top of the browser. Once you reach the interior sections, you will find a an accordion-style menu to better organize the full list of menu items; this helps the user not feel overwhelmed with options.
+%section.project
+  %article
+    %figure.subnav
+      %a.ion-chevron-left.wow.zoomIn{href: "/work/traverse"}
+      %a.ion-chevron-right.wow.zoomIn{href: "/work/rumble"}
+    %figure.intro
+      .item-text.wow.fadeInLeft
+        %h2 Bistro23
+        %h5 American Style Bistro (Student Project)
+        %p Bistro 23 is a fine-dining restaurant with an american cuisine menu. Located within the center of the screen are the menu options providing fragment identifer links to other sections of this one-page site, as well as the contrasting logo for brand recognition.
+      .item-image.wow.fadeInUp
+        = image_tag("bistro23-devices.png")
+    %figure
+      .item-image.wow.fadeInUp
+        = image_tag("bistro23-1.jpg")
+      .item-text.wow.fadeInRight
+        %h3 Above the Fold
+        %p The entire screen is filled with large-scale imagery of the restaurant, on a rotation timer.
+    %figure
+      .item-image.wow.fadeInUp
+        = image_tag("bistro23-2.jpg")
+      .item-text.wow.fadeInRight
+        %h3 Menu
+        %p  As you scroll down, the menu fixates to the top of the browser. Once you reach the interior sections, you will find a an accordion-style menu to better organize the full list of menu items; this helps the user not feel overwhelmed with options.
