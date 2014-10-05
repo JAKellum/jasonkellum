@@ -1,19 +1,17 @@
-%section.main-section
-  %section
-    .content
-      .project-nav
-        .prev
-          %a.hidden{href: "main"} Home &raquo;
-        .next
-          %a{href: "/work/combofonts"} Combofonts &raquo;
-      .item.intro
-        .item-text
-          %h2 Truck n Seek
-          %h5 Food Truck App (Preview)
-          %p Aiming to connect people with trucks, this geo-locational app allows food truck owners to post their locations and timeframe. Customers are able to search and view nearby trucks after entering in an address. Created by Spring 2014 KYN apprentices. 
-        .item-image
-          = image_tag("trucknseek-devices.png")
-      .item
-        .coming-soon
-          %h3 Case Study Coming Soon
-          %h5 May 15th, 2014
+%section.project
+  %article
+    %figure.subnav
+      %a.ion-home.wow.zoomIn{href: "/"}
+      %a.ion-chevron-left.wow.zoomIn{href: "/work/oppify"}
+      %a.ion-chevron-right.wow.zoomIn{href: "/work/combofonts"}
+    %figure.intro
+      .item-text.wow.fadeInLeft
+        %h2 Truck 'n Seek
+        %h5 Food Truck App (Preview)
+        %p Aiming to connect people with trucks, this geo-locational app allows food truck owners to post their locations and timeframe. Customers are able to search and view nearby trucks after entering in an address. Created by Spring 2014 KYN apprentices.
+        %p Case Study Coming Soon
+      .item-image.wow.fadeInUp
+        = image_tag("trucknseek-devices.png")
+    -# %figure
+    -#   .coming-soon.wow.fadeIn
+    -#     %h3 Case Study Coming Soon

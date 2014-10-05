@@ -1,0 +1,30 @@
+nav
+  position: fixed
+  top: 1%
+  right: 2%
+  z-index: 2000
+  .ion-navicon
+    font-size: em-calc(50)
+    color: $gray
+  .ion-navicon:hover
+    color: $dark-red
+    cursor: pointer
+  img
+    border-radius: 50%
+    max-width: 100px
+.overlay.overlay-slidedown
+  z-index: 1000
+  nav
+    h1, h2, h3, p
+      color: $white
+    ul
+      max-width: em-calc(300)
+      margin-top: em-calc(15)
+      li
+        +grid-column(4)
+        i
+          font-size: em-calc(42)
+
+.overlay.overlay-slidedown
+  nav
+    right: inherit
