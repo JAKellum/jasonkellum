@@ -16,7 +16,14 @@ section.project
       +grid-row
       padding-bottom: em-calc(40)
       .coming-soon
+        -webkit-animation-delay: 1s
+        animation-delay: 1s
         padding: em-calc(75 0 50 0)
+        position: absolute
+        top: 40%
+        bottom: 0
+        right: 0
+        left: 0
         h3, h5
           text-align: center
       .item-image
@@ -48,7 +55,3 @@ section.project
       .item-text
         @media #{$large}
           +grid-column(5)
-
-.coming-soon
-  -webkit-animation-delay: 2s
-  animation-delay: 2s
