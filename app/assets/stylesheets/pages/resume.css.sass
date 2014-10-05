@@ -1,5 +1,8 @@
 section.resume
   article
+    figure
+      margin: 0
+      padding-top: em-calc(50)
     ul
       margin: 0
       li
@@ -13,12 +16,34 @@ section.resume
     h5
       font-family: $CGB
   article.left
-    +grid-column(3)
-    background-color: $red
-    height: 100vh
-    position: fixed
+    +grid-column(12)
+    @media #{$large}
+      +grid-column(3)
     figure
-      position: fixed
-      bottom: 0
+      @media #{$large}
+        position: fixed
+        top: 40%
+        right: 0
+        bottom: 0
+        left: 5%
+        padding-top: 0
+      h2
+        color: $gray
   article.right
-    +grid-column(9)
+    +grid-column(12)
+    @media #{$large}
+      +grid-column(9)
+    figure
+      h2
+        color: $gray
+      ul
+        margin-bottom: em-calc(20)
+      h6.v
+        color: $gray
+        padding-bottom: em-calc(20)
+        @media #{$large}
+          transform: rotate(-90deg)
+          position: fixed
+          bottom: 20%
+          right: -7%
+          padding-bottom: 0
