@@ -16,7 +16,6 @@
 //= require foundation
 //= require turbolinks
 //= require_tree .
-//= require_wow.min
 
 window.onload = function(){ $(document).foundation(); };
 

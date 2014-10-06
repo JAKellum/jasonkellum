@@ -15,7 +15,8 @@
 
     = render 'shared/footer'
 
+    = javascript_include_tag "wow.min"
     = javascript_include_tag "analytics"
     = javascript_include_tag "application"
-    // :javascript
-    //   $(document).ready ($(document.foundation()))
+    :javascript
+      $(document).ready ($(document.foundation()))
