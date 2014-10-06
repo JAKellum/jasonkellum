@@ -14,6 +14,7 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require foundation
+//= require wow.min
 //= require turbolinks
 //= require_tree .
 
