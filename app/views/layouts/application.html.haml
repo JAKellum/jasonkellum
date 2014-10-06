@@ -4,7 +4,8 @@
     %meta{charset: "utf-8"}/
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
     %title= content_for?(:title) ? yield(:title) : "Jason Kellum | Portfolio"
-    = stylesheet_link_tag    "application"
+    = stylesheet_link_tag "application"
+    = stylesheet_link_tag "http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css"
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
   %body
@@ -21,3 +22,5 @@
     = javascript_include_tag "analytics"
     :javascript
       $(document).ready ($(document.foundation()))
+
+      new WOW().init();
