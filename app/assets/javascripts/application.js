@@ -15,6 +15,8 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require wow.min
+//= require analytics
 //= require_tree .
 
 window.onload = function(){ $(document).foundation(); };
