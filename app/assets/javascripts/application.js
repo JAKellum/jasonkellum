@@ -16,6 +16,8 @@
 //= require foundation
 //= require turbolinks
 //= require wow.min
+//= require classie.js
+//= require demo1.js
 //= require analytics
 //= require_tree .
 
