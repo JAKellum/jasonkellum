@@ -12,10 +12,14 @@ nav
   img
     border-radius: 50%
     max-width: 100px
+  i
+    +single-transition
 .overlay.overlay-slidedown
   z-index: 1000
   nav
     h1, h2, h3, p
+      color: $white
+    a:hover
       color: $white
     ul
       max-width: em-calc(300)
@@ -23,7 +27,11 @@ nav
       li
         +grid-column(4)
         i
+          +single-transition
           font-size: em-calc(42)
+          color: $dark-red
+          &:hover
+            color: $white
 
 .overlay.overlay-slidedown
   nav
