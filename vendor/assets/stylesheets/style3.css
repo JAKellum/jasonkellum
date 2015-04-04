@@ -10,18 +10,19 @@
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-	width: 30px;
+	display: none
+	/*width: 30px;
 	height: 30px;
 	position: absolute;
 	right: 10px;
 	top: 20px;
 	overflow: hidden;
 	border: none;
-	/*background: url(cross.png) no-repeat center center;*/
+	background: url(cross.png) no-repeat center center;
 	text-indent: 200%;
 	color: transparent;
 	outline: none;
-	z-index: 100;
+	z-index: 100;*/
 }
 
 /* Menu style */

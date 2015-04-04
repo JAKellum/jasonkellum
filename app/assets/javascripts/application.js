@@ -21,6 +21,9 @@
 //= require analytics
 //= require_tree .
 
-window.onload = function(){ $(document).foundation(); };
+$(document).ready(function() {
+  $(this).foundation();
+  new WOW().init();
+});
 
 $(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=$(this.hash);e=e.length?e:$("[name="+this.hash.slice(1)+"]");if(e.length){$("html,body").animate({scrollTop:e.offset().top},1e3);return false}}})})
