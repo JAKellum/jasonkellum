@@ -1,45 +1,62 @@
 section.project
   article
-    figure, figure.tablet, figure.intro, figure.phone
+    figure
       +grid-row
-      padding-bottom: em-calc(40)
-      .coming-soon
-        -webkit-animation-delay: 1s
-        animation-delay: 1s
-        padding: em-calc(75 0 50 0)
-        position: absolute
-        top: 40%
-        bottom: 0
-        right: 0
-        left: 0
-        h3, h5, p
-          text-align: center
-      .item-image
-        +grid-column(12)
-        @media #{$medium}
-          +grid-column(7)
-        @media #{$large}
-          +grid-column(8)
-      .item-text
-        +grid-column(12)
-        h3
-          padding-top: em-calc(20)
-          padding-bottom: em-calc(15)
-        @media #{$medium}
-          padding-top: em-calc(0)
-          +grid-column(5)
-        @media #{$large}
-          padding-top: em-calc(200)
-          +grid-column(4)
-    figure.intro
-      padding-top: em-calc(150)
-      .item-text
-        @media #{$large}
-          padding-top: em-calc(90)
-    figure.phone
-      .item-image
-        @media #{$large}
-          +grid-column(5,$offset:2)
-      .item-text
-        @media #{$large}
-          +grid-column(5)
+      &.tablet, &.intro, &.phone
+        padding-bottom: em-calc(40)
+        .coming-soon
+          -webkit-animation-delay: 1s
+          animation-delay: 1s
+          padding: em-calc(75 0 50 0)
+          position: absolute
+          top: 40%
+          bottom: 0
+          right: 0
+          left: 0
+          h3, h5, p
+            text-align: center
+        .item-text
+          +grid-column(12)
+          padding-top: em-calc(50)
+          h3
+            padding-top: em-calc(20)
+            padding-bottom: em-calc(15)
+          @media #{$medium}
+            margin-top: em-calc(150)
+            +grid-column(5)
+          @media #{$large}
+            padding-top: em-calc(200)
+            +grid-column(4)
+        .item-image
+          +grid-column(12)
+          @media #{$medium}
+            +grid-column(7)
+          @media #{$large}
+            +grid-column(8)
+      &.hero
+        text-align: center
+        .item-text
+          +grid-column(12)
+          margin-top: 150px
+          margin-bottom: 50px
+      &.content
+        .item-image
+          margin-top: 50px
+          margin-bottom: 50px
+          +grid-column(12)
+          @media #{$medium}
+            +grid-column(9,$offset:1.5)
+          @media #{$large}
+            +grid-column(6,$offset:3)
+      &.intro
+        padding-top: em-calc(65)
+        .item-text
+          @media #{$large}
+            padding-top: em-calc(90)
+      &.phone
+        .item-image
+          @media #{$large}
+            +grid-column(5,$offset:2)
+        .item-text
+          @media #{$large}
+            +grid-column(5)

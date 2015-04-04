@@ -19,8 +19,10 @@ nav
   nav
     h1, h2, h3, p
       color: $white
-    a:hover
-      color: $white
+    a
+      color: $gray
+      &:hover
+        color: $dark-red
     ul
       max-width: em-calc(300)
       margin-top: em-calc(15)
@@ -29,23 +31,27 @@ nav
         i
           +single-transition
           font-size: em-calc(42)
-          color: $dark-red
+          color: $gray
           &:hover
-            color: $white
+            color: $dark-red
 
 .overlay.overlay-slidedown
   nav
     right: inherit
 
-figure.subnav
-  +grid-row
-  padding-top: em-calc(20)
-  padding-left: 1%
+.subnav
   position: fixed
+  top: 10px
+  left: 5px
   z-index: 100
-  a
-    color: $gray
-    font-size: em-calc(30)
-    padding: em-calc(0 10)
-  a:hover
-    color: $dark-red
+  ul
+    margin: 0
+    li
+      display: inline-block
+      list-stye-type: none
+      a
+        color: $gray
+        font-size: em-calc(30)
+        padding: em-calc(0 10)
+      a:hover
+        color: $dark-red
