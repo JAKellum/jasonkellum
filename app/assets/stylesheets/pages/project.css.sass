@@ -2,19 +2,19 @@ section.project
   article
     figure
       +grid-row
+      .coming-soon
+        -webkit-animation-delay: 1s
+        animation-delay: 1s
+        padding: em-calc(75 0 50 0)
+        position: absolute
+        top: 40%
+        bottom: 0
+        right: 0
+        left: 0
+        h3, h5, p
+          text-align: center
       &.tablet, &.intro, &.phone
         padding-bottom: em-calc(40)
-        .coming-soon
-          -webkit-animation-delay: 1s
-          animation-delay: 1s
-          padding: em-calc(75 0 50 0)
-          position: absolute
-          top: 40%
-          bottom: 0
-          right: 0
-          left: 0
-          h3, h5, p
-            text-align: center
         .item-text
           +grid-column(12)
           padding-top: em-calc(50)
