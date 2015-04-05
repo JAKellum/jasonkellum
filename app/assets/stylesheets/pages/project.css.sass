@@ -113,3 +113,35 @@ section.project
           @media #{$large}
             +grid-column(5,$offset:2)
             padding-top: 0
+      &.compare
+        padding-bottom: 40px
+        .item-image
+          +grid-column(12)
+          padding-top: 50px
+          @media #{$medium}
+            +grid-column(6)
+          select
+            +grid-column(12)
+            border: 1px solid $gray
+            border-radius: 5px
+            background-color: $white
+            outline: none
+            cursor: pointer
+            text-align: center
+            @media #{$medium}
+              +grid-column(6,$offset:3)
+            option
+              text-align: center
+              font:
+                size: em-cacl(28)
+          img
+            +grid-column(12)
+            @media #{$medium}
+              +grid-column(8,$offset:2)
+          h3
+            text-align: center
+            padding-bottom: 20px
+          &:nth-of-type(1)
+            display: none
+            @media #{$medium}
+              display: inherit
