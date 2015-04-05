@@ -14,11 +14,16 @@ section.project
         h3, h5, p
           text-align: center
       &.hero
-        text-align: center
+        @media #{$medium}
+          text-align: center
         .item-text
           +grid-column(12)
           margin-top: 150px
           margin-bottom: 50px
+          @media #{$medium}
+            +grid-column(10,$offset:1)
+          @media #{$large}
+            +grid-column(8,$offset:2)
       &.content
         .item-image
           margin-top: 50px
