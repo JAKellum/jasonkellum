@@ -16,9 +16,21 @@
 //= require foundation
 //= require turbolinks
 //= require wow.min
+//= require classie.js
+//= require demo1.js
 //= require analytics
 //= require_tree .
 
-window.onload = function(){ $(document).foundation(); };
+$(document).ready(function() {
+  $(this).foundation();
+  new WOW().init();
+});
 
 $(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=$(this.hash);e=e.length?e:$("[name="+this.hash.slice(1)+"]");if(e.length){$("html,body").animate({scrollTop:e.offset().top},1e3);return false}}})})
+
+$('select.div-toggler').change(function(){
+    var target = $(this).data('target');
+    $(target).children().addClass('hide');
+    var show = $("option:selected", this).data('show');
+    $(show).removeClass('hide');
+});

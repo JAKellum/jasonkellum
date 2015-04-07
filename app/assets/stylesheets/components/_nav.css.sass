@@ -12,19 +12,46 @@ nav
   img
     border-radius: 50%
     max-width: 100px
+  i
+    +single-transition
 .overlay.overlay-slidedown
   z-index: 1000
   nav
     h1, h2, h3, p
       color: $white
+    a
+      color: $gray
+      &:hover
+        color: $dark-red
     ul
       max-width: em-calc(300)
       margin-top: em-calc(15)
       li
         +grid-column(4)
         i
+          +single-transition
           font-size: em-calc(42)
+          color: $gray
+          &:hover
+            color: $dark-red
 
 .overlay.overlay-slidedown
   nav
     right: inherit
+
+.subnav
+  position: fixed
+  top: 10px
+  left: 5px
+  z-index: 100
+  ul
+    margin: 0
+    li
+      display: inline-block
+      list-stye-type: none
+      a
+        color: $gray
+        font-size: em-calc(30)
+        padding: em-calc(0 10)
+      a:hover
+        color: $dark-red
