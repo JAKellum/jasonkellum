@@ -6,15 +6,36 @@
       %a.ion-chevron-left.wow.zoomIn{href: "/"}
     %li
       %a.ion-chevron-right.wow.zoomIn{href: "/work/aiga"}
+  = render 'shared/view'
 %section.project
   %article
-    -# %figure.intro
-    -#   .item-text.wow.fadeInLeft
-    -#     %h2 AIGA
-    -#     %h5 Webfont Combination Application (Preview)
-    -#     %p Combofonts is a personal project I've been working on which takes the google library of webfonts and provides ideal font pairs. The application asks a series of questions based on the tone and mood of the context, provides a few alternative results, and then gives the markup to include in any website. It is targeted towards developers or those who are not as familiar with typography.
-    -#   .item-image.wow.fadeInUp
-    -#     = image_tag("combofonts-devices.png")
-    %figure
-      .coming-soon.wow.fadeIn
-        %h3 TxtOut Case Study Coming Soon
+    %figure.intro
+      .item-text.wow.fadeInLeft
+        %h2 TxtOut
+        %h5 Attendance Tracking Tool
+        %p Created to relieve a business painpoint, TxtOut replaced an outdated voice-mail center used by Nike and Ebay manufacturing warehouses.
+        %p Associates can call-out and, for the first time, text-out tardy or absent. For the staffing agency, it frees associates from manually transcribing voicemails and provides them with searchable, digital attendance reports.
+      .item-image.wow.fadeInUp
+        = image_tag("work/txtout-devices.gif")
+    %figure.image
+      .item-image.toggle-view.wow.fadeInUp
+        .desk
+          = image_tag("work/txtout-dash-desktop.jpg")
+        .tab.hide
+          = image_tag("work/txtout-dash-tablet.jpg")
+        .mob.hide
+          = image_tag("work/txtout-dash-mobile.jpg")
+      .item-text.wow.fadeInRight
+        %h3 Dashboard
+        -# %p Text
+    %figure.image
+      .item-image.toggle-view.wow.fadeInUp
+        .desk
+          = image_tag("work/txtout-admin-desktop.jpg")
+        .tab.hide
+          = image_tag("work/txtout-admin-tablet.jpg")
+        .mob.hide
+          = image_tag("work/txtout-admin-mobile.jpg")
+      .item-text.wow.fadeInRight
+        %h3 Admin Dashboard
+        -# %p Text
