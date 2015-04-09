@@ -18,14 +18,24 @@
       .item-image.wow.fadeInUp
         = image_tag("work/txtout-devices.gif")
     %figure.image
-      .item-image.wow.fadeInUp
-        = image_tag("work/txtout-dash.jpg")
+      .item-image.toggle-view.wow.fadeInUp
+        .desk
+          = image_tag("work/txtout-dash-desktop.jpg")
+        .tab.hide
+          = image_tag("work/txtout-dash-tablet.jpg")
+        .mob.hide
+          = image_tag("work/txtout-dash-mobile.jpg")
       .item-text.wow.fadeInRight
         %h3 Dashboard
         %p Text
     %figure.image
-      .item-image.wow.fadeInUp
-        = image_tag("work/txtout-admin.jpg")
+      .item-image.toggle-view.wow.fadeInUp
+        .desk
+          = image_tag("work/txtout-admin-desktop.jpg")
+        .tab.hide
+          = image_tag("work/txtout-admin-tablet.jpg")
+        .mob.hide
+          = image_tag("work/txtout-admin-mobile.jpg")
       .item-text.wow.fadeInRight
         %h3 Admin Dashboard
         %p Text
