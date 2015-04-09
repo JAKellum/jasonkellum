@@ -56,8 +56,9 @@ nav
       a:hover
         color: $dark-red
   select
-    +grid-column(12)
-    margin-top: 15px
+    +grid-column(10,$offset:1)
+    position: fixed
+    bottom: 0
     border: 1px solid $gray
     border-radius: 5px
     background-color: $white
@@ -67,9 +68,7 @@ nav
     color: $gray
     @media #{$medium}
       +grid-column(3,$offset:4.5)
-      position: absolute
-      margin-top: 0
-      top: 2px
+      right: 20px
     option
       text-align: center
       font:
