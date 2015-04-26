@@ -17,14 +17,14 @@ section.resume
     h5
       font-family: $CGB
   .wrapper.left
-    +grid-column(12)
-    @media #{$large}
-      +grid-column(3)
+    +span-columns(12)
+    +media($mobile)
+      +span-columns(3)
     article
       padding-top: em-calc(100)
       padding-bottom: 0
     article
-      @media #{$large}
+      +media($mobile)
         position: fixed
         top: 40%
         right: 0
@@ -34,9 +34,9 @@ section.resume
       h2
         color: $gray
   .wrapper.right
-    +grid-column(12)
-    @media #{$large}
-      +grid-column(9)
+    +span-columns(12)
+    +media($mobile)
+      +span-columns(9)
     article
       h2
         color: $gray
@@ -44,7 +44,7 @@ section.resume
         margin-bottom: em-calc(20)
       h6.v
         color: $gray
-        @media #{$large}
+        +media($mobile)
           transform: rotate(-90deg)
           position: fixed
           bottom: 20%

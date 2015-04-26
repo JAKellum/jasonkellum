@@ -27,6 +27,9 @@ GEM
       tzinfo (~> 0.3.37)
     addressable (2.3.6)
     arel (4.0.2)
+    bourbon (3.2.3)
+      sass (~> 3.2)
+      thor
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -38,9 +41,6 @@ GEM
     erubis (2.7.0)
     excon (0.33.0)
     execjs (2.0.2)
-    foundation-rails (5.2.2.0)
-      railties (>= 3.1.0)
-      sass (>= 3.2.0)
     haml (4.0.5)
       tilt
     heroku (3.6.0)
@@ -72,6 +72,9 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.9.3)
+    neat (1.5.1)
+      bourbon (>= 3.1)
+      sass (~> 3.2.19)
     netrc (0.7.7)
     pg (0.17.1)
     polyglot (0.3.4)
@@ -137,13 +140,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourbon
   coffee-rails (~> 4.0.0)
-  foundation-rails
   haml
   heroku
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
+  neat
   pg
   rails (= 4.0.2)
   rails_12factor

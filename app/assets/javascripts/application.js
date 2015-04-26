@@ -13,8 +13,6 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require foundation
-//= require turbolinks
 //= require wow.min
 //= require classie
 //= require demo1
@@ -22,7 +20,7 @@
 //= require analytics
 
 
-$(document).foundation();
+$(document).ready();
 new WOW().init();
 
 $('select.div-toggler').change(function(){

@@ -6,12 +6,12 @@ section.home
       li
         list-style: none
         padding: 0 !important
-      @media #{$medium}
-        +block-grid(3)
-      @media #{$large}
-        +block-grid(4)
+      +media($tablet)
+        // +block-grid(3)
+      +media($mobile)
+        // +block-grid(4)
       img
         width: 100%
 .portfolio-item:hover
-  +single-transition
+  +transition
   opacity: .5

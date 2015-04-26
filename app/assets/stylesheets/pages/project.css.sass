@@ -1,7 +1,8 @@
 section.project
   .wrapper
     article
-      +grid-row
+      +row
+      +outer-container
       .coming-soon
         -webkit-animation-delay: 1s
         animation-delay: 1s
@@ -14,140 +15,149 @@ section.project
         h3, h5, p
           text-align: center
       &.hero
-        @media #{$medium}
+        +media($tablet)
           text-align: center
         .item-text
-          +grid-column(12)
+          +span-columns(12)
           margin-top: 150px
           margin-bottom: 50px
-          @media #{$medium}
-            +grid-column(10,$offset:1)
-          @media #{$large}
-            +grid-column(8,$offset:2)
+          +media($tablet)
+            +span-columns(10)
+            +shift(1)
+          +media($mobile)
+            +span-columns(8)
+            +shift(2)
       &.content
         .item-image
           margin-top: 50px
           margin-bottom: 50px
-          +grid-column(12)
-          @media #{$medium}
-            +grid-column(9,$offset:1.5)
-          @media #{$large}
-            +grid-column(6,$offset:3)
+          +span-columns(12)
+          +media($tablet)
+            +span-columns(9)
+            +shift(1.5)
+          +media($mobile)
+            +span-columns(6)
+            +shift(3)
       &.intro
         padding-top: 100px
         padding-bottom: 50px
-        @media #{$medium}
+        +media($tablet)
           padding-bottom: 100px
-        @media #{$large}
+        +media($mobile)
           padding-top: 150px
         .item-text
-          +grid-column(12)
-          @media #{$medium}
-            +grid-column(5)
+          +span-columns(12)
+          +media($tablet)
+            +span-columns(5)
             padding-top: 100px
-          @media #{$large}
-            +grid-column(4)
+          +media($mobile)
+            +span-columns(4)
         .item-image
-          +grid-column(12)
-          @media #{$medium}
-            +grid-column(7)
+          +span-columns(12)
+          +media($tablet)
+            +span-columns(7)
             padding-top: 75px
-          @media #{$large}
-            +grid-column(8)
+          +media($mobile)
+            +span-columns(8)
             padding-top: 0
       &.image
         padding-bottom: 40px
         .item-image
-          +grid-column(12)
+          +span-columns(12)
           padding-top: 50px
           img
             display: block
             margin: 0 auto
             box-shadow: 5px 5px 5px $light-gray
-          @media #{$medium}
-            +grid-column(7)
+          +media($tablet)
+            +span-columns(7)
             padding: 0
-          @media #{$large}
-            +grid-column(7)
+          +media($mobile)
+            +span-columns(7)
         .item-text
-          +grid-column(12)
-          @media #{$medium}
-            +grid-column(5)
+          +span-columns(12)
+          +media($tablet)
+            +span-columns(5)
             padding-top: 100px
-          @media #{$large}
-            +grid-column(5)
+          +media($mobile)
+            +span-columns(5)
           h3
             padding-top: 20px
             padding-bottom: 20px
       &.tablet
         padding-bottom: 75px
         .item-text
-          +grid-column(12)
-          @media #{$medium}
-            +grid-column(6)
+          +span-columns(12)
+          +media($tablet)
+            +span-columns(6)
             padding-top: 200px
-          @media #{$large}
-            +grid-column(5)
+          +media($mobile)
+            +span-columns(5)
           h3
             padding-top: 20px
             padding-bottom: 15px
         .item-image
-          +grid-column(12)
-          @media #{$medium}
-            +grid-column(6)
+          +span-columns(12)
+          +media($tablet)
+            +span-columns(6)
             padding-top: 75px
-          @media #{$large}
-            +grid-column(7)
+          +media($mobile)
+            +span-columns(7)
             padding-top: 0
       &.phone
         padding-bottom: 40px
         .item-text
-          +grid-column(12)
-          @media #{$medium}
-            +grid-column(5)
+          +span-columns(12)
+          +media($tablet)
+            +span-columns(5)
             padding-top: 250px
           h3
             padding-top: 20px
             padding-bottom: 15px
         .item-image
-          +grid-column(10,$offset:1)
-          @media #{$medium}
-            +grid-column(7,$offset:0)
+          +span-columns(10)
+          +shift(1)
+          +media($tablet)
+            +span-columns(7)
+            +shift(0)
             padding-top: 75px
-          @media #{$large}
-            +grid-column(5,$offset:2)
+          +media($mobile)
+            +span-columns(5)
+            +shift(2)
             padding-top: 0
       &.compare
         padding-bottom: 40px
         .item-image
-          +grid-column(12)
+          +span-columns(12)
           padding-top: 50px
-          @media #{$medium}
-            +grid-column(6)
+          +media($tablet)
+            +span-columns(6)
           select
-            +grid-column(12)
+            +span-columns(12)
             border: 1px solid $gray
             border-radius: 5px
             background-color: $white
             outline: none
             cursor: pointer
             text-align: center
-            @media #{$medium}
-              +grid-column(6,$offset:3)
+            +media($tablet)
+              +span-columns(6)
+              +shift(3)
             option
               text-align: center
               font:
                 size: em-cacl(28)
           img
-            +grid-column(12)
+            +span-columns(12)
             padding: 0 !important
             box-shadow: 5px 5px 5px $light-gray
-            @media #{$medium}
-              +grid-column(8,$offset:2)
+            +media($tablet)
+              +span-columns(8)
+              +shift(2)
           h5
             text-align: center
             padding-bottom: 20px
           &:nth-of-type(1)
             display: none
-            @media #{$medium}
+            +media($tablet)
               display: inherit
