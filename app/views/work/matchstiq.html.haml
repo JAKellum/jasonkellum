@@ -8,15 +8,15 @@
       %a.ion-chevron-right.wow.zoomIn{href: "/work/asps"}
   = render 'shared/view'
 %section.project
-  %article
-    %figure.intro
+  .wrapper
+    %article.intro
       .item-text.wow.fadeInLeft
         %h2 Matchstiq
         %h5 Vendor Management System
         %p Matchstiq is a simple online tool with collaborative job order management, comprehensive analytics and in-app activity tracking for both hiring managers and recruiters.
       .item-image.wow.fadeInUp
         = image_tag("work/ms-devices.gif")
-    %figure.image
+    %article.image
       .item-image.toggle-view.wow.fadeInUp
         .desk
           = image_tag("work/ms-dash-desktop.jpg")
@@ -27,7 +27,7 @@
       .item-text.wow.fadeInRight
         %h3 Dashboard
         -# %p Text
-    %figure.image
+    %article.image
       .item-image.toggle-view.wow.fadeInUp
         .desk
           = image_tag("work/ms-modal-desktop.jpg")
@@ -38,7 +38,7 @@
       .item-text.wow.fadeInRight
         %h3 Modals
         -# %p Text
-    %figure.image
+    %article.image
       .item-image.toggle-view.wow.fadeInUp
         .desk
           = image_tag("work/ms-splash-desktop.jpg")
@@ -49,7 +49,7 @@
       .item-text.wow.fadeInRight
         %h3 Splash Screen
         -# %p Text
-    %figure.image
+    %article.image
       .item-image.toggle-view.wow.fadeInUp
         .desk
           = image_tag("work/ms-resources-desktop.jpg")
@@ -60,7 +60,7 @@
       .item-text.wow.fadeInRight
         %h3 Resources
         -# %p Text
-    %figure.image
+    %article.image
       .item-image.toggle-view.wow.fadeInUp
         .desk
           = image_tag("work/ms-login-desktop.jpg")

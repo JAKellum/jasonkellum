@@ -8,8 +8,8 @@
       %a.ion-chevron-right.wow.zoomIn{href: "/work/aiga"}
   = render 'shared/view'
 %section.project
-  %article
-    %figure.intro
+  .wrapper
+    %article.intro
       .item-text.wow.fadeInLeft
         %h2 TxtOut
         %h5 Attendance Tracking Tool
@@ -17,7 +17,7 @@
         %p Associates can call-out and, for the first time, text-out tardy or absent. For the staffing agency, it frees associates from manually transcribing voicemails and provides them with searchable, digital attendance reports.
       .item-image.wow.fadeInUp
         = image_tag("work/txtout-devices.gif")
-    %figure.image
+    %article.image
       .item-image.toggle-view.wow.fadeInUp
         .desk
           = image_tag("work/txtout-dash-desktop.jpg")
@@ -28,7 +28,7 @@
       .item-text.wow.fadeInRight
         %h3 Dashboard
         -# %p Text
-    %figure.image
+    %article.image
       .item-image.toggle-view.wow.fadeInUp
         .desk
           = image_tag("work/txtout-admin-desktop.jpg")

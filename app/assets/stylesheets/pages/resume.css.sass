@@ -1,6 +1,6 @@
 section.resume
-  article
-    figure
+  .wrapper
+    article
       margin: 0
       padding-top: em-calc(50)
       padding-bottom: em-calc(50)
@@ -16,14 +16,14 @@ section.resume
       font-family: $CGB
     h5
       font-family: $CGB
-  article.left
+  .wrapper.left
     +grid-column(12)
     @media #{$large}
       +grid-column(3)
-    figure
+    article
       padding-top: em-calc(100)
       padding-bottom: 0
-    figure
+    article
       @media #{$large}
         position: fixed
         top: 40%
@@ -33,11 +33,11 @@ section.resume
         padding-top: 0
       h2
         color: $gray
-  article.right
+  .wrapper.right
     +grid-column(12)
     @media #{$large}
       +grid-column(9)
-    figure
+    article
       h2
         color: $gray
       ul
