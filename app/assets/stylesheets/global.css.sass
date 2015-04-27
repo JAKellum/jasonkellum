@@ -1,4 +1,4 @@
-// Mixins
+// Colors
 $light-gray: #f0f0f0
 $gray: #dadada
 $dark-gray: #333333
@@ -6,6 +6,8 @@ $white: white
 $red: #c5202e
 $red-o: rgba(197,32,46,0.9)
 $dark-red: #772231
+
+// Fonts
 $CGL: 'CriqueGrotesk-Light', sans-serif
 $CGR: 'CriqueGrotesk-Regular', sans-serif
 $CGH: 'CriqueGrotesk-Heavy', sans-serif
@@ -14,19 +16,18 @@ $CGB: 'CriqueGrotesk-Bold', sans-serif
 // Layout
 .hide
   display: none
-
-@import neat-helpers
+$em-base: 16px
 
 // Neat Overrides
 $column: 90px
 $gutter: 20px
 $grid-columns: 12
-$max-width: em(1200)
+$max-width: 1200px
 
 // Neat Variables
-$mobile-size:em(620)
-$tablet-size:em(960)
-$desktop-size:em(1200)
+$mobile-size: 620px
+$tablet-size: 960px
+$desktop-size: 1200px
 
 // Neat Breakpoints
 $mobile: new-breakpoint(max-width $mobile-size)

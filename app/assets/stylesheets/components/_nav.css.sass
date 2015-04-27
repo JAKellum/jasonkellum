@@ -4,14 +4,14 @@ nav
   right: 2%
   z-index: 2000
   .ion-navicon
-    font-size: em-calc(50)
+    font-size: rem(50)
     color: $gray
   .ion-navicon:hover
     color: $dark-red
     cursor: pointer
   img
     border-radius: 50%
-    max-width: 100px
+    max-width: rem(100)
   i
     +transition
 .overlay.overlay-slidedown
@@ -24,13 +24,13 @@ nav
       &:hover
         color: $dark-red
     ul
-      max-width: em-calc(300)
-      margin-top: em-calc(15)
+      max-width: rem(300)
+      margin-top: rem(15)
       li
         +span-columns(4)
         i
           +transition
-          font-size: em-calc(42)
+          font-size: rem(42)
           color: $gray
           &:hover
             color: $dark-red
@@ -41,8 +41,8 @@ nav
 
 .subnav
   position: fixed
-  top: 10px
-  left: 5px
+  top: rem(10)
+  left: rem(5)
   z-index: 100
   ul
     margin: 0
@@ -51,8 +51,8 @@ nav
       list-stye-type: none
       a
         color: $gray
-        font-size: em-calc(30)
-        padding: em-calc(0 10)
+        font-size: rem(30)
+        padding: rem(0) rem(10)
       a:hover
         color: $dark-red
   select
@@ -61,7 +61,7 @@ nav
     position: fixed
     bottom: 0
     border: 1px solid $gray
-    border-radius: 5px
+    border-radius: rem(5)
     background-color: $white
     outline: none
     cursor: pointer
@@ -70,8 +70,8 @@ nav
     +media($tablet)
       +span-columns(3)
       +shift(4.5)
-      right: 20px
+      right: rem(20)
     option
       text-align: center
       font:
-        size: em-cacl(28)
+        size: rem(28)

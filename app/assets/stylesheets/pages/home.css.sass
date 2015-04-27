@@ -1,17 +1,17 @@
 section.home
-  .wrapper
-    ul
-      margin: 0
-      padding: 0
-      li
-        list-style: none
-        padding: 0 !important
-      +media($tablet)
-        // +block-grid(3)
-      +media($mobile)
-        // +block-grid(4)
-      img
-        width: 100%
+  ul
+    +span-columns(3)
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      padding: 0 !important
+    +media($tablet)
+      +span-columns(4)
+    +media($mobile)
+      +span-columns(12)
+    img
+      width: 100%
 .portfolio-item:hover
   +transition
   opacity: .5
