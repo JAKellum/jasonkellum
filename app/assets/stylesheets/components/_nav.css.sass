@@ -41,7 +41,7 @@ nav
 
 .subnav
   position: fixed
-  top: rem(10)
+  top: rem(20)
   left: rem(5)
   z-index: 100
   ul
@@ -56,10 +56,11 @@ nav
       a:hover
         color: $dark-red
   select
-    +span-columns(10)
-    +shift(1)
+    +span-columns(3)
     position: fixed
-    bottom: 0
+    right: rem(20)
+    bottom: rem(20)
+    height: rem(30)
     border: 1px solid $gray
     border-radius: rem(5)
     background-color: $white
@@ -67,10 +68,8 @@ nav
     cursor: pointer
     text-align: center
     color: $gray
-    +media($tablet)
-      +span-columns(3)
-      +shift(4.5)
-      right: rem(20)
+    +media($mobile)
+      +span-columns(11)
     option
       text-align: center
       font:
