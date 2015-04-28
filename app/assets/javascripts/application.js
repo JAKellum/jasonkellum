@@ -10,6 +10,8 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require modernizr
+//= require selectivizr
 //= require jquery
 //= require jquery_ujs
 //= require wow.min

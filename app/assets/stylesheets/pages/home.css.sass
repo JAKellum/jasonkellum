@@ -1,22 +1,15 @@
 section.home
+  +span-columns(12)
   ul
-    margin: 0
-    padding: 0
-    display: inline-block
     li
       +span-columns(3)
-      list-style: none
-      padding: 0 !important
-      margin: 0 !important
+      margin: 0 0 rem(-4) 0
       +media($tablet)
         +span-columns(4)
+        margin: 0 0 rem(-4) 0
       +media($mobile)
         +span-columns(12)
-      a
-        display: block
-        margin-bottom: rem(-4)
-        img
-          width: 100%
+        margin: 0 0 rem(-4) 0
 .portfolio-item:hover
   +transition
   opacity: .5
