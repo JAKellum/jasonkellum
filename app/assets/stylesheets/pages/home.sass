@@ -1,0 +1,15 @@
+section.home
+  +span-columns(12)
+  ul
+    li
+      +span-columns(3)
+      margin: 0 0 rem(-7) 0
+      +media($tablet)
+        +span-columns(4)
+        margin: 0 0 rem(-7) 0
+      +media($mobile)
+        +span-columns(12)
+        margin: 0 0 rem(-7) 0
+.portfolio-item:hover
+  +transition
+  opacity: .5

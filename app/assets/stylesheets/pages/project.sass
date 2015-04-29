@@ -1,0 +1,146 @@
+section.project
+  .wrapper
+    +row
+    +outer-container
+    +media($desktop)
+      padding: 0 rem(20)
+    article
+      .coming-soon
+        -webkit-animation-delay: 1s
+        animation-delay: 1s
+        padding: rem(75) rem(0) rem(50) rem(0)
+        position: absolute
+        top: 40%
+        bottom: 0
+        right: 0
+        left: 0
+        h3, h5, p
+          text-align: center
+      &.intro
+        +span-columns(12)
+        padding-top: rem(150)
+        padding-bottom: rem(100)
+        +media($tablet)
+          padding-top: 0
+          padding-bottom: 0
+        .item-text
+          +span-columns(4)
+          padding-top: rem(100)
+          padding-right: rem(40)
+          +media($tablet)
+            +span-columns(12)
+            padding-right: 0
+          h5
+            padding-top: 0
+        .item-image
+          +span-columns(8)
+          +media($tablet)
+            +span-columns(12)
+            padding-top: rem(0)
+            margin-bottom: rem(50)
+      &.image
+        +span-columns(12)
+        margin: 0 0 rem(50) 0
+        .item-image
+          +span-columns(7)
+          img
+            display: block
+            margin: 0 auto
+            box-shadow: rem(5) rem(5) rem(5) $light-gray
+          +media($tablet)
+            +span-columns(7)
+          +media($mobile)
+            +span-columns(12)
+        .item-text
+          +span-columns(5)
+          padding-top: rem(100)
+          padding-left: rem(40)
+          +media($tablet)
+            +span-columns(5)
+          +media($mobile)
+            +span-columns(12)
+            padding-top: 0
+            padding-left: 0
+          h3
+            padding-top: rem(20)
+            padding-bottom: rem(20)
+      &.tablet
+        +span-columns(12)
+        padding-bottom: rem(75)
+        .item-text
+          +span-columns(5)
+          padding-top: rem(200)
+          +media($tablet)
+            +span-columns(12)
+            padding-top: 0
+          h3
+            padding-top: rem(20)
+            padding-bottom: rem(15)
+        .item-image
+          +span-columns(7)
+          +media($tablet)
+            +span-columns(12)
+      &.phone
+        +span-columns(12)
+        padding-bottom: rem(40)
+        .item-text
+          +span-columns(5)
+          padding-top: rem(250)
+          +media($tablet)
+            +span-columns(6)
+          +media($mobile)
+            +span-columns(12)
+            padding-top: 0
+          h3
+            padding-top: rem(20)
+            padding-bottom: rem(15)
+        .item-image
+          +span-columns(5)
+          +shift(2)
+          +media($tablet)
+            +span-columns(6)
+            +shift(0)
+            padding-top: rem(75)
+          +media($mobile)
+            +span-columns(10)
+            +shift(1)
+      &.compare
+        +span-columns(12)
+        padding-bottom: rem(40)
+        .item-image
+          +span-columns(6)
+          +media($mobile)
+            +span-columns(12)
+          select
+            +span-columns(6)
+            +shift(3)
+            height: rem(30)
+            margin-bottom: rem(25)
+            border: 1px solid $gray
+            border-radius: rem(5)
+            background-color: $white
+            outline: none
+            cursor: pointer
+            text-align: center
+            +media($mobile)
+              +span-columns(12)
+              +shift(0)
+            option
+              text-align: center
+              font:
+                size: rem(28)
+          img
+            +span-columns(8)
+            +shift(2)
+            padding: 0 !important
+            box-shadow: rem(5) rem(5) rem(5) $light-gray
+            +media($tablet)
+              +span-columns(12)
+              +shift(0)
+          h5
+            text-align: center
+            padding-bottom: rem(20)
+          &:nth-of-type(1)
+            display: inherit
+            +media($mobile)
+              display: none
