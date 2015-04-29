@@ -1,17 +1,17 @@
-#{$all-button-inputs},
+#{$all-button-inputs}, .button,
 button
   +appearance(none)
   +transition
   -webkit-font-smoothing: antialiased
-  background-color: $action-color
-  border-radius: $base-border-radius
-  border: none
-  color: #fff
+  background-color: $white
+  border-radius: 0
+  border: rem(2) $gray solid
+  color: $gray
   cursor: pointer
   display: inline-block
-  font-family: $base-font-family
+  font-family: $heading-font-family
   font-size: $base-font-size
-  font-weight: 600
+  font-weight: normal
   line-height: 1
   padding: 0.75em 1em
   text-decoration: none
@@ -20,24 +20,9 @@ button
   white-space: nowrap
   &:hover,
   &:focus
-    background-color: darken($action-color, 15%)
+    background-color: darken($red, 15%)
+    border-color: darken($red, 15%)
     color: #fff
   &:disabled
     cursor: not-allowed
     opacity: 0.5
-
-// .button
-//   background-color: $white
-//   border: 3px $gray solid
-//   color: $gray
-//   font-family: 'CriqueGrotesk-LightItalic'
-//   display: inline-block
-//   height: rem(55)
-//   padding-left: rem(10)
-//   padding-right: rem(10)
-//   text-decoration: none
-//   line-height: rem(50)
-// .button:hover
-//   background-color: $dark-red
-//   border: 3px $dark-red solid
-//   color: $white
