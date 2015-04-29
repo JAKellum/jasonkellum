@@ -8,18 +8,6 @@ section.resume
       margin: 0
       padding-top: rem(50)
       padding-bottom: rem(50)
-    ul
-      margin: 0
-      li
-        list-style-type: none
-    h3
-      font-size: rem(18)
-      font-family: $CGB
-    h4
-      font-size: rem(16)
-      font-family: $CGB
-    h5
-      font-family: $CGB
   .wrapper.left
     +span-columns(3)
     +media($mobile)
@@ -43,18 +31,20 @@ section.resume
       +span-columns(12)
       +shift(0)
     article
-      h2
-        color: $gray
-      ul
-        margin-bottom: rem(20)
-      h6.v
-        color: $gray
-        transform: rotate(-90deg)
-        position: fixed
-        bottom: rem(250)
-        right: 0
-        +media($mobile)
-          transform: inherit
-          position: inherit
-          bottom: 0
+      figure
+        margin: 0 0 rem(50) 0
+        h2
+          color: $gray
+        ul
+          margin-bottom: rem(20)
+        h6.v
+          color: $gray
+          transform: rotate(-90deg)
+          position: fixed
+          bottom: rem(250)
           right: 0
+          +media($mobile)
+            transform: inherit
+            position: inherit
+            bottom: 0
+            right: 0
