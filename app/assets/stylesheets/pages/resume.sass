@@ -2,6 +2,8 @@ section.resume
   .wrapper
     +row
     +outer-container
+    +media($desktop)
+      padding: 0 rem(20)
     article
       margin: 0
       padding-top: rem(50)
@@ -49,8 +51,8 @@ section.resume
         color: $gray
         transform: rotate(-90deg)
         position: fixed
-        bottom: 20%
-        right: -7%
+        bottom: rem(250)
+        right: 0
         +media($mobile)
           transform: inherit
           position: inherit

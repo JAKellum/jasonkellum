@@ -2,6 +2,8 @@ section.project
   .wrapper
     +row
     +outer-container
+    +media($desktop)
+      padding: 0 rem(20)
     article
       .coming-soon
         -webkit-animation-delay: 1s
@@ -48,11 +50,13 @@ section.project
         .item-text
           +span-columns(5)
           padding-top: rem(100)
+          padding-left: rem(40)
           +media($tablet)
             +span-columns(5)
           +media($mobile)
             +span-columns(12)
             padding-top: 0
+            padding-left: 0
           h3
             padding-top: rem(20)
             padding-bottom: rem(20)
