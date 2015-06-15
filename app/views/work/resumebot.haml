@@ -1,0 +1,29 @@
+%nav.subnav
+  %ul
+    %li
+      %a.ion-home.wow.zoomIn{href: '/'}
+    %li
+      %a.ion-chevron-left.wow.zoomIn{href: '/'}
+    %li
+      %a.ion-chevron-right.wow.zoomIn{href: '/work/txtout'}
+%section.project
+  .wrapper
+    %article.intro
+      .item-text.wow.fadeIn
+        %h2 R&eacute;sum&eacute;Bot
+        %h5 Format r&eacute;sum&eacute;s faster
+        %p R&eacute;sum&eacute;Bot is a tool to help recruiters format resumes faster. Tasks like organizing content, adding bullets and styling text are automated and completed within seconds.
+        %p The concept for this t-shirt was to represent the animation of consuming a resume, while keeping it on a printed medium; changing expressions as you read the text.
+      .item-image.wow.fadeIn
+        = image_tag('work/rb-shirt.png')
+    %article.image
+      .item-image.options
+        .print
+          = image_tag('work/rb-intro.jpg')
+        .print-two.hide
+          = image_tag('work/rb-faq.jpg')
+      .item-text
+        %h3 PDF Support Pages
+        %select.div-toggler{'data-target' => '.options'}
+          %option{'data-show' => '.print', :value => 'print'} Introduction One-Pager
+          %option{'data-show' => '.print-two', :value => 'print-two'}  FAQ One-Pager
