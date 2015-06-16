@@ -6,15 +6,73 @@
       %a.ion-chevron-left.wow.zoomIn{href: '/work/asps'}
     %li
       %a.ion-chevron-right.wow.zoomIn{href: '/work/oppify'}
+  = render 'shared/three'
 %section.project
   .wrapper
-    -# %article.intro
-    -#   .item-text.wow.fadeIn
-    -#     %h2 Ignite
-    -#     %h5 Webfont Combination Application (Preview)
-    -#     %p Combofonts is a personal project I've been working on which takes the google library of webfonts and provides ideal font pairs. The application asks a series of questions based on the tone and mood of the context, provides a few alternative results, and then gives the markup to include in any website. It is targeted towards developers or those who are not as familiar with typography.
-    -#   .item-image.wow.fadeIn
-    -#     = image_tag('combofonts-devices.png')
-    %article
-      .coming-soon.wow.fadeIn
-        %h3 Ignite Case Study Coming Soon
+    %article.intro
+      .item-text.wow.fadeIn
+        %h2 Ignite
+        %h5 Company Website
+        %p Content needed
+      .item-image.wow.fadeIn
+        = image_tag('work/ignite-devices.gif')
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-home-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-home-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-home-mobile.jpg')
+      .item-text
+        %h3 Homepage
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-selfies-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-selfies-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-selfies-mobile.jpg')
+      .item-text
+        %h3 Selfies
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-jobs-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-jobs-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-jobs-mobile.jpg')
+      .item-text
+        %h3 Jobs
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-login-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-login-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-login-mobile.jpg')
+      .item-text
+        %h3 Login
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-resources-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-resources-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-resources-mobile.jpg')
+      .item-text
+        %h3 Resources
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-contact-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-contact-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-contact-mobile.jpg')
+      .item-text
+        %h3 Contact
