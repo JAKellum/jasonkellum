@@ -1,20 +1,20 @@
 %nav.subnav
   %ul
     %li
-      %a.ion-home.wow.zoomIn{href: '/'}
+      %a.ion-home{href: '/'}
     %li
-      %a.ion-chevron-left.wow.zoomIn{href: '/work/aiga'}
+      %a.ion-chevron-left{href: '/work/aiga'}
     %li
-      %a.ion-chevron-right.wow.zoomIn{href: '/work/asps'}
+      %a.ion-chevron-right{href: '/work/asps'}
   = render 'shared/three'
 %section.project
   .wrapper
     %article.intro
-      .item-text.wow.fadeIn
+      .item-text
         %h2 Matchstiq
         %h5 Vendor Management System
         %p Matchstiq is a simple online tool with collaborative job order management, comprehensive analytics and in-app activity tracking for both hiring managers and recruiters.
-      .item-image.wow.fadeIn
+      .item-image
         = image_tag('work/ms-devices.gif')
     %article.image
       .item-image.toggle-view

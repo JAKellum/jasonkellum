@@ -14,7 +14,6 @@
 //= require selectivizr
 //= require jquery
 //= require jquery_ujs
-//= require wow.min
 //= require classie
 //= require demo1
 //= require windows.min
