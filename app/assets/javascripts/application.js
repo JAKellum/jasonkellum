@@ -14,13 +14,16 @@
 //= require selectivizr
 //= require jquery
 //= require jquery_ujs
-//= require classie
-//= require demo1
 //= require windows.min
 //= require analytics
 
 
 $(document).ready();
+
+$('#nav-icon').click(function(){
+	  $('.overlay').slideToggle( 'show' );
+		$(this).toggleClass('open');
+	});
 
 $('select.div-toggler').change(function(){
     var target = $(this).data('target');
