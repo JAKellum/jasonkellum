@@ -21,7 +21,6 @@
 
 
 $(document).ready();
-new WOW().init();
 
 $('select.div-toggler').change(function(){
     var target = $(this).data('target');
