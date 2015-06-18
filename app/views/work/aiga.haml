@@ -1,25 +1,25 @@
 %nav.subnav
   %ul
     %li
-      %a.ion-home.wow.zoomIn{href: '/'}
+      %a.ion-home{href: '/'}
     %li
-      %a.ion-chevron-left.wow.zoomIn{href: '/work/txtout'}
+      %a.ion-chevron-left{href: '/work/txtout'}
     %li
-      %a.ion-chevron-right.wow.zoomIn{href: '/work/matchstiq'}
+      %a.ion-chevron-right{href: '/work/matchstiq'}
 %section.project
   .wrapper
     %article.intro
-      .item-text.wow.fadeInLeft
+      .item-text
         %h2 AIGA Newsletter 2015 Redesign
         %h5 Jacksonville Chapter
         %p Tasked with updating the monthly communications newsletter, the redesign brought forth a single-column modular layout, full-width images, bold new accent colors, and a vast reduction of text. Allowing it to act more as inspiration and a friendly upcoming event reminder, directing the audience to the website; where they can find full event details.
-      .item-image.wow.fadeInUp
+      .item-image
         = image_tag('work/aiga-devices.gif')
     %article.compare
-      .item-image.wow.fadeInLeft
+      .item-image
         %h5 2014
         = image_tag('work/aiga-prior.jpg')
-      .item-image.wow.fadeInRight
+      .item-image
         %select.div-toggler{'data-target' => '.newsletters'}
           %option{'data-show' => '.post', :value => 'post'} 2015 Prototype
           %option{'data-show' => '.jan', :value => 'jan'}  January 2015

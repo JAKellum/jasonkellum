@@ -14,15 +14,16 @@
 //= require selectivizr
 //= require jquery
 //= require jquery_ujs
-//= require wow.min
-//= require classie
-//= require demo1
 //= require windows.min
 //= require analytics
 
 
 $(document).ready();
-new WOW().init();
+
+$('#nav-icon').click(function(){
+	  $('.overlay').slideToggle( 'show' );
+		$(this).toggleClass('open');
+	});
 
 $('select.div-toggler').change(function(){
     var target = $(this).data('target');

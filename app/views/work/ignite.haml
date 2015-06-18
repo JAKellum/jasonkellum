@@ -1,20 +1,94 @@
 %nav.subnav
   %ul
     %li
-      %a.ion-home.wow.zoomIn{href: '/'}
+      %a.ion-home{href: '/'}
     %li
-      %a.ion-chevron-left.wow.zoomIn{href: '/work/asps'}
+      %a.ion-chevron-left{href: '/work/resumebot'}
     %li
-      %a.ion-chevron-right.wow.zoomIn{href: '/work/oppify'}
+      %a.ion-chevron-right{href: '/work/txtout'}
+  = render 'shared/three'
 %section.project
   .wrapper
-    -# %article.intro
-    -#   .item-text.wow.fadeInLeft
-    -#     %h2 Ignite
-    -#     %h5 Webfont Combination Application (Preview)
-    -#     %p Combofonts is a personal project I've been working on which takes the google library of webfonts and provides ideal font pairs. The application asks a series of questions based on the tone and mood of the context, provides a few alternative results, and then gives the markup to include in any website. It is targeted towards developers or those who are not as familiar with typography.
-    -#   .item-image.wow.fadeInUp
-    -#     = image_tag('combofonts-devices.png')
-    %article
-      .coming-soon.wow.fadeIn
-        %h3 Ignite Case Study Coming Soon
+    %article.intro
+      .item-text
+        %h2 Ignite
+        %h5 Company Marketing Website 2015
+        -# %p Copy will go here...
+        %cite
+          %ul
+            %li
+              Design:
+              %a{:href => "http://www.katygarrison.com/", :target => "_blank"}Katy Garrison
+            %li
+              Content:
+              %a{:href => "http://www.acqylla.com/", :target => "_blank"}Jen Hyde
+            %li
+              Front-End:
+              %a{:href => "/"}Jason Kellum
+              &plus;
+              %a{:href => "http://www.daniloquilaton.com/", :target => "_blank"}Danilo Quilaton
+            %li
+              Photography:
+              %a{:href => "https://twitter.com/amberaultman", :target => "_blank"}Amber Aultman
+      .item-image
+        = image_tag('work/ignite-devices.gif')
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-home-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-home-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-home-mobile.jpg')
+      .item-text
+        %h3 Homepage
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-selfies-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-selfies-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-selfies-mobile.jpg')
+      .item-text
+        %h3 Selfies
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-jobs-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-jobs-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-jobs-mobile.jpg')
+      .item-text
+        %h3 Jobs
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-login-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-login-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-login-mobile.jpg')
+      .item-text
+        %h3 Login
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-resources-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-resources-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-resources-mobile.jpg')
+      .item-text
+        %h3 Resources
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/ignite-contact-desktop.jpg')
+        .tab.hide
+          = image_tag('work/ignite-contact-tablet.jpg')
+        .mob.hide
+          = image_tag('work/ignite-contact-mobile.jpg')
+      .item-text
+        %h3 Contact
