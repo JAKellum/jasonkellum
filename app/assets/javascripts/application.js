@@ -15,8 +15,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require windows.min
-//= require analytics
-
 
 $(document).ready();
 
