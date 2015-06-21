@@ -1,19 +1,17 @@
 nav
+  +transition
   position: fixed
+  width: 100%
   top: 2.5%
-  right: 2%
   z-index: 2000
-  .ion-navicon
-    font-size: rem(50)
+  .ion-home
+    margin-left: rem(20)
+    font-size: rem(32)
+    line-height: .75
     color: $gray
-  .ion-navicon:hover
-    color: $dark-red
-    cursor: pointer
-  img
-    border-radius: 50%
-    max-width: rem(100)
-  i
-    +transition
+    z-index: 4000
+    &:hover
+      color: $dark-red
 .overlay
   z-index: 1000
   position: fixed
@@ -27,6 +25,9 @@ nav
     +animation(fadeIn 2.5s)
     text-align: center
     margin-top: 30vh
+    img
+      border-radius: 50%
+      max-width: rem(100)
     h1, h2, h3, p
       color: $white
     h2
@@ -52,6 +53,8 @@ nav
 
 // Hamburger CSS
 #nav-icon
+  float: right
+  margin-right: rem(20)
   z-index: 2000
   width: rem(30)
   height: rem(20)
