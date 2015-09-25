@@ -17,10 +17,7 @@
 //= require smoothState
 //= require windows.min
 
-$(document).ready();
-
-$(function(){
-  'use strict';
+$(document).ready(function() {
   var options = {
     prefetch: true,
     cacheLength: 2,
@@ -43,20 +40,28 @@ $(function(){
         // Inject the new content
         $container.html($newContent);
 
+        // Hook the burger back up
+        $('#nav-icon').click(function() {
+      	   $('.overlay').slideToggle( 'show' );
+      		 $(this).toggleClass('open');
+      	});
+
+        if ($('.aiga').length > 0) {
+
+          $('select.div-toggler').change(function() {
+            var target = $(this).data('target');
+            $(target).children().addClass('hide');
+
+            var show = $("option:selected", this).data('show');
+            $(show).removeClass('hide');
+          });
+        }
       }
+    },
+    onBefore: function($currentTarget, $container) {
+      $('#nav-icon').off('click');
     }
-  },
-  smoothState = $('#main').smoothState(options).data('smoothState');
-});
+  };
 
-$('#nav-icon').click(function(){
-	  $('.overlay').slideToggle( 'show' );
-		$(this).toggleClass('open');
-	});
-
-$('select.div-toggler').change(function(){
-    var target = $(this).data('target');
-    $(target).children().addClass('hide');
-    var show = $("option:selected", this).data('show');
-    $(show).removeClass('hide');
+  window.smoothState = $('#main').smoothState(options).data('smoothState');
 });
