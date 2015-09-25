@@ -1,4 +1,4 @@
-section.resume
+section.m-resume-layout
   .wrapper
     +row
     +outer-container
@@ -8,32 +8,12 @@ section.resume
       margin: 0
       padding-top: rem(50)
       padding-bottom: rem(50)
-  .wrapper.left
-    +span-columns(3)
-    +media($mobile)
-      +span-columns(12)
-    article
-      +animation(fadeIn 2s)
-      padding-top: 0
-      position: fixed
-      top: 40%
-      right: 0
-      bottom: 0
-      left: 5%
+      +span-columns(9)
+      +shift(3)
       +media($mobile)
-        position: inherit
-        padding-top: rem(100)
-      h2
-        color: $gray
-  .wrapper.right
-    +span-columns(9)
-    +shift(3)
-    +media($mobile)
-      +span-columns(12)
-      +shift(0)
-    article
+        +span-columns(12)
+        +shift(0)
       figure
-        +animation(fadeIn 2s)
         margin: 0 0 rem(50) 0
         h2
           color: $gray
@@ -50,3 +30,16 @@ section.resume
             position: inherit
             bottom: 0
             right: 0
+    aside
+      width: 100%
+      padding-top: 0
+      position: fixed
+      top: 20%
+      right: 0
+      bottom: 0
+      left: 5%
+      +media($mobile)
+        position: inherit
+        padding-top: rem(100)
+      h2
+        color: $gray

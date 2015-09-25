@@ -1,6 +1,5 @@
-#main.m-scene
-  %section.home
-    %ul.scene_element.scene_element--fadeinleft
-      - Page.names.each do |page_name|
-        %li
-          = link_to image_tag("brands/brand-#{page_name}.jpg", :class => 'portfolio-item'), '/work/' + page_name
+%section.m-home-layout
+  %ul.m-list.scene_element.scene_element--fadeinleft
+    - Page.names.each do |page_name|
+      %li
+        = link_to image_tag("brands/brand-#{page_name}.jpg", :class => 'portfolio-item'), '/work/' + page_name

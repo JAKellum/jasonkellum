@@ -8,10 +8,12 @@
     = javascript_include_tag "analytics" if Rails.env.production?
     = csrf_meta_tags
   %body
+    #main.m-scene
 
-    = render 'shared/navigation'
+      = render 'shared/navigation'
 
-    = yield
+      = yield
 
-    = render 'shared/footer'
+      -# = render 'shared/footer'
+
     = javascript_include_tag "application"
