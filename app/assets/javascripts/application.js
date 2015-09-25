@@ -24,7 +24,7 @@ $(document).ready(function() {
   		 $(this).toggleClass('open');
   	});
 
-    if ($('.aiga').length > 0) {
+    if ($('.aiga, .resumebot').length > 0) {
 
       $('select.div-toggler').change(function() {
         var target = $(this).data('target');
