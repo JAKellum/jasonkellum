@@ -18,6 +18,24 @@
 //= require windows.min
 
 $(document).ready(function() {
+  var hookEvents = function() {
+    $('#nav-icon').click(function() {
+  	   $('.overlay').slideToggle( 'show' );
+  		 $(this).toggleClass('open');
+  	});
+
+    if ($('.aiga').length > 0) {
+
+      $('select.div-toggler').change(function() {
+        var target = $(this).data('target');
+        $(target).children().addClass('hide');
+
+        var show = $("option:selected", this).data('show');
+        $(show).removeClass('hide');
+      });
+    }
+  }
+
   var options = {
     prefetch: true,
     cacheLength: 2,
@@ -40,22 +58,7 @@ $(document).ready(function() {
         // Inject the new content
         $container.html($newContent);
 
-        // Hook the burger back up
-        $('#nav-icon').click(function() {
-      	   $('.overlay').slideToggle( 'show' );
-      		 $(this).toggleClass('open');
-      	});
-
-        if ($('.aiga').length > 0) {
-
-          $('select.div-toggler').change(function() {
-            var target = $(this).data('target');
-            $(target).children().addClass('hide');
-
-            var show = $("option:selected", this).data('show');
-            $(show).removeClass('hide');
-          });
-        }
+        hookEvents();
       }
     },
     onBefore: function($currentTarget, $container) {
@@ -64,4 +67,5 @@ $(document).ready(function() {
   };
 
   window.smoothState = $('#main').smoothState(options).data('smoothState');
+  hookEvents();
 });
