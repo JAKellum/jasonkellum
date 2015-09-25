@@ -1,11 +1,10 @@
-section.project
+section.m-project-layout
   .wrapper
     +row
     +outer-container
     +media($desktop)
       padding: 0 rem(20)
     article
-      +animation(fadeIn 2s)
       .coming-soon
         padding: rem(75) rem(0) rem(50) rem(0)
         position: absolute
@@ -35,7 +34,7 @@ section.project
           +span-columns(8)
           +media($tablet)
             +span-columns(12)
-            padding-top: rem(0)
+            padding-top: rem(50)
             margin-bottom: rem(50)
       &.image
         +span-columns(12)
@@ -50,6 +49,20 @@ section.project
             +span-columns(7)
           +media($mobile)
             +span-columns(12)
+          .desk
+            display: inherit
+            +media($tablet)
+              display: none
+          .tab
+            display: none
+            +media($tablet)
+              display: inherit
+            +media($mobile)
+              display: none
+          .mob
+            display: none
+            +media($mobile)
+              display: inherit
         .item-text
           +span-columns(5)
           padding-top: rem(100)

@@ -1,14 +1,5 @@
-%nav.subnav
-  %ul
-    %li
-      %a.ion-home{href: '/'}
-    %li
-      %a.ion-chevron-left{href: '/work/resumebot'}
-    %li
-      %a.ion-chevron-right{href: '/work/txtout'}
-  = render 'shared/three'
-%section.project
-  .wrapper
+%section.m-project-layout
+  .wrapper.m-page.scene_element.scene_element--fadeinright
     %article.intro
       .item-text
         %h2 Ignite
@@ -33,62 +24,62 @@
       .item-image
         = image_tag('work/ignite-devices.gif')
     %article.image
-      .item-image.toggle-view
+      .item-image
         .desk
           = image_tag('work/ignite-home-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ignite-home-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ignite-home-mobile.jpg')
       .item-text
         %h3 Homepage
     %article.image
-      .item-image.toggle-view
+      .item-image
         .desk
           = image_tag('work/ignite-selfies-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ignite-selfies-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ignite-selfies-mobile.jpg')
       .item-text
         %h3 Selfies
     %article.image
-      .item-image.toggle-view
+      .item-image
         .desk
           = image_tag('work/ignite-jobs-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ignite-jobs-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ignite-jobs-mobile.jpg')
       .item-text
         %h3 Jobs
     %article.image
-      .item-image.toggle-view
+      .item-image
         .desk
           = image_tag('work/ignite-login-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ignite-login-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ignite-login-mobile.jpg')
       .item-text
         %h3 Login
     %article.image
-      .item-image.toggle-view
+      .item-image
         .desk
           = image_tag('work/ignite-resources-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ignite-resources-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ignite-resources-mobile.jpg')
       .item-text
         %h3 Resources
     %article.image
-      .item-image.toggle-view
+      .item-image
         .desk
           = image_tag('work/ignite-contact-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ignite-contact-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ignite-contact-mobile.jpg')
       .item-text
         %h3 Contact

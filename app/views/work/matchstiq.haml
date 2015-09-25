@@ -1,14 +1,5 @@
-%nav.subnav
-  %ul
-    %li
-      %a.ion-home{href: '/'}
-    %li
-      %a.ion-chevron-left{href: '/work/aiga'}
-    %li
-      %a.ion-chevron-right{href: '/work/asps'}
-  = render 'shared/three'
-%section.project
-  .wrapper
+%section.m-project-layout
+  .wrapper.m-page.scene_element.scene_element--fadeinright
     %article.intro
       .item-text
         %h2 Matchstiq
@@ -31,9 +22,9 @@
       .item-image.toggle-view
         .desk
           = image_tag('work/ms-dash-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ms-dash-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ms-dash-mobile.jpg')
       .item-text
         %h3 Dashboard
@@ -42,9 +33,9 @@
       .item-image.toggle-view
         .desk
           = image_tag('work/ms-modal-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ms-modal-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ms-modal-mobile.jpg')
       .item-text
         %h3 Modals
@@ -53,9 +44,9 @@
       .item-image.toggle-view
         .desk
           = image_tag('work/ms-splash-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ms-splash-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ms-splash-mobile.jpg')
       .item-text
         %h3 Splash Screen
@@ -64,9 +55,9 @@
       .item-image.toggle-view
         .desk
           = image_tag('work/ms-resources-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ms-resources-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ms-resources-mobile.jpg')
       .item-text
         %h3 Resources
@@ -75,9 +66,9 @@
       .item-image.toggle-view
         .desk
           = image_tag('work/ms-login-desktop.jpg')
-        .tab.hide
+        .tab
           = image_tag('work/ms-login-tablet.jpg')
-        .mob.hide
+        .mob
           = image_tag('work/ms-login-mobile.jpg')
       .item-text
         %h3 Login

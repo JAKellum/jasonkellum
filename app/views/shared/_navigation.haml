@@ -1,10 +1,14 @@
 %nav
+  - if params[:controller] == 'work'
+    %a.ion-home{href: '/'}
+    %a.ion-chevron-left{href: '/work/' + Page.prev_of(params[:action])}
+    %a.ion-chevron-right{href: '/work/' + Page.next_of(params[:action])}
   #nav-icon
     %span
     %span
     %span
     %span
-  .overlay{style: 'display: none'}
+  .overlay{:style => 'display: none'}
     %section
       = image_tag('jason-profile-ignite.gif')
       %h2 Jason Kellum

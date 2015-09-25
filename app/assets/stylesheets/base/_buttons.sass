@@ -36,3 +36,22 @@ select
   outline: none
   cursor: pointer
   text-align: center
+  &.render
+    +span-columns(3)
+    position: fixed
+    right: rem(20)
+    bottom: rem(20)
+    height: rem(30)
+    border: 1px solid $gray
+    border-radius: rem(5)
+    background-color: $white
+    outline: none
+    cursor: pointer
+    text-align: center
+    color: $gray
+    +media($mobile)
+      +span-columns(11)
+    option
+      text-align: center
+      font:
+        size: rem(28)
