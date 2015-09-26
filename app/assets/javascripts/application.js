@@ -16,6 +16,7 @@
 //= require jquery_ujs
 //= require smoothState
 //= require windows.min
+//= require analytics
 
 $(document).ready(function() {
   var hookEvents = function() {
