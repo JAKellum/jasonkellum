@@ -3,10 +3,16 @@ section.m-project-layout
     +row
     +outer-container
     +desktop
-      padding: 0 rem(20)
+      +rem(padding-top, 0px)
+      +rem(padding-right, 20px)
+      +rem(padding-bottom, 0px)
+      +rem(padding-left, 20px)
     article
       .coming-soon
-        padding: rem(75) rem(0) rem(50) rem(0)
+        +rem(padding-top, 75px)
+        +rem(padding-right, 0px)
+        +rem(padding-bottom, 50px)
+        +rem(padding-left, 0px)
         position: absolute
         top: 40%
         bottom: 0
@@ -16,29 +22,32 @@ section.m-project-layout
           text-align: center
       &.intro
         +span-columns(12)
-        padding-top: rem(150)
-        padding-bottom: rem(100)
+        +rem(padding-top, 150px)
+        +rem(padding-bottom, 100px)
         +tablet
-          padding-top: 0
-          padding-bottom: 0
+          +rem(padding-top, 0px)
+          +rem(padding-bottom, 0px)
         .item-text
           +span-columns(4)
-          padding-top: rem(100)
-          padding-right: rem(40)
+          +rem(padding-top, 100px)
+          +rem(padding-right, 40px)
           +tablet
             +span-columns(12)
-            padding-right: 0
+            +rem(padding-right, 0px)
           h5
-            padding-top: 0
+            +rem(padding-top, 0px)
         .item-image
           +span-columns(8)
           +tablet
             +span-columns(12)
-            padding-top: rem(50)
-            margin-bottom: rem(50)
+            +rem(padding-top, 50px)
+            +rem(margin-bottom, 50px)
       &.image
         +span-columns(12)
-        margin: 0 0 rem(50) 0
+        +rem(margin-top, 0px)
+        +rem(margin-right, 0px)
+        +rem(margin-bottom, 50px)
+        +rem(margin-left, 0px)
         .item-image
           +span-columns(7)
           img
@@ -65,62 +74,62 @@ section.m-project-layout
               display: inherit
         .item-text
           +span-columns(5)
-          padding-top: rem(100)
-          padding-left: rem(40)
+          +rem(padding-top, 100px)
+          +rem(padding-left, 40px)
           +tablet
             +span-columns(5)
           +mobile
             +span-columns(12)
-            padding-top: 0
-            padding-left: 0
+            +rem(padding-top, 0px)
+            +rem(padding-left, 0px)
           select
-            margin-top: rem(20)
+            +rem(margin-top, 20px)
           h3
-            padding-top: rem(20)
-            padding-bottom: rem(20)
+            +rem(padding-top, 20px)
+            +rem(padding-bottom, 20px)
       &.tablet
         +span-columns(12)
-        padding-bottom: rem(75)
+        +rem(padding-bottom, 75px)
         .item-text
           +span-columns(5)
-          padding-top: rem(200)
+          +rem(padding-top, 200px)
           +tablet
             +span-columns(12)
-            padding-top: 0
+            +rem(padding-top, 0px)
           h3
-            padding-top: rem(20)
-            padding-bottom: rem(15)
+            +rem(padding-top, 20px)
+            +rem(padding-bottom, 15px)
         .item-image
           +span-columns(7)
           +tablet
             +span-columns(12)
       &.phone
         +span-columns(12)
-        padding-bottom: rem(40)
+        +rem(padding-bottom, 40px)
         .item-text
           +span-columns(5)
-          padding-top: rem(250)
+          +rem(padding-top, 250px)
           +tablet
             +span-columns(6)
           +mobile
             +span-columns(12)
-            padding-top: 0
+            +rem(padding-top, 0px)
           h3
-            padding-top: rem(20)
-            padding-bottom: rem(15)
+            +rem(padding-top, 20px)
+            +rem(padding-bottom, 15px)
         .item-image
           +span-columns(5)
           +shift(2)
           +tablet
             +span-columns(6)
             +shift(0)
-            padding-top: rem(75)
+            +rem(padding-top, 75px)
           +mobile
             +span-columns(10)
             +shift(1)
       &.compare
         +span-columns(12)
-        padding-bottom: rem(40)
+        +rem(padding-bottom, 40px)
         .item-image
           +span-columns(6)
           +mobile
@@ -143,8 +152,8 @@ section.m-project-layout
               +span-columns(12)
               +shift(0)
           h5
+            +rem(padding-bottom, 20px)
             text-align: center
-            padding-bottom: rem(20)
           &:nth-of-type(1)
             display: inherit
             +mobile

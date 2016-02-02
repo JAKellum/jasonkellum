@@ -19,12 +19,17 @@ $base-font-size: 16px
   font-size: $size
   font-size: calculateRem($size)
 
+// REM Calc
+=rem($propertie, $value)
+  #{$propertie}: $value
+  #{$propertie}: calculateRem($value)
+
 // Line height
 $base-line-height: 1.5
 $heading-line-height: 1.2
 
 // Other Sizes
-$base-border-radius: 3px
+$base-border-radius: rem(3)
 $base-spacing: $base-line-height * rem(1)
 $small-spacing: $base-spacing / 12
 $base-z-index: 0

@@ -3,29 +3,38 @@ section.m-resume-layout
     +row
     +outer-container
     +desktop
-      padding: 0 rem(20)
+      +rem(padding-top, 0px)
+      +rem(padding-right, 20px)
+      +rem(padding-bottom, 0px)
+      +rem(padding-left, 20px)
     article
-      margin: 0
-      padding-top: rem(50)
-      padding-bottom: rem(50)
+      +rem(margin, 0px)
+      +rem(padding-top, 50px)
+      +rem(padding-bottom, 50px)
       +span-columns(9)
       +shift(3)
       +mobile
         +span-columns(12)
         +shift(0)
       figure
-        margin: 0 0 rem(50) 0
+        +rem(margin-top, 0px)
+        +rem(margin-right, 0px)
+        +rem(margin-bottom, 50px)
+        +rem(margin-left, 0px)
         h2
           color: lighten($gray, 50%)
         dl
-          margin: 0 0 rem(40) 0
+          +rem(margin-top, 0px)
+          +rem(margin-right, 0px)
+          +rem(margin-bottom, 40px)
+          +rem(margin-left, 0px)
         ul
-          margin-bottom: rem(20)
+          +rem(margin-bottom, 20px)
         h6.v
+          +rem(bottom, 250px)
           color: lighten($gray, 50%)
           transform: rotate(-90deg)
           position: fixed
-          bottom: rem(250)
           right: 0
           +mobile
             transform: inherit
@@ -41,7 +50,7 @@ section.m-resume-layout
       bottom: 0
       left: 5%
       +mobile
+        +rem(padding-top, 100px)
         position: inherit
-        padding-top: rem(100)
       h2
         color: lighten($gray, 50%)

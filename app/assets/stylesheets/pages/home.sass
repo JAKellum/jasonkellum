@@ -3,13 +3,11 @@ section.m-home-layout
   ul
     li
       +span-columns(3)
-      margin: 0 0 rem(-7) 0
+      +rem(margin-bottom, -7px)
       +tablet
         +span-columns(4)
-        margin: 0 0 rem(-7) 0
       +mobile
         +span-columns(12)
-        margin: 0 0 rem(-7) 0
 .portfolio-item:hover
   +transition
-  opacity: .5
+  +opacity(.5)

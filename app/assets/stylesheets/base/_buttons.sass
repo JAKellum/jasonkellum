@@ -2,6 +2,7 @@
 button
   +appearance(none)
   +transition
+  +rem(padding, 20px)
   -webkit-font-smoothing: antialiased
   background-color: $white
   border-radius: 0
@@ -13,7 +14,6 @@ button
   font-size: $base-font-size
   font-weight: normal
   line-height: 1
-  padding: 0.75em 1em
   text-decoration: none
   user-select: none
   vertical-align: middle
@@ -26,24 +26,24 @@ button
   &:disabled
     +opacity(0.5)
     cursor: not-allowed
-    
+
 select
-  height: rem(30)
-  margin-bottom: rem(25)
+  +rem(height, 30px)
+  +rem(margin-bottom, 25px)
+  +rem(border-radius, 5px)
   border: rem(1) solid lighten($gray, 50%)
-  border-radius: rem(5)
   background-color: $white
   outline: none
   cursor: pointer
   text-align: center
   &.render
     +span-columns(3)
+    +rem(height, 30px)
+    +rem(right, 20px)
+    +rem(bottom, 20px)
+    +rem(border-radius, 5px)
     position: fixed
-    right: rem(20)
-    bottom: rem(20)
-    height: rem(30)
     border: rem(1) solid lighten($gray, 50%)
-    border-radius: rem(5)
     background-color: $white
     outline: none
     cursor: pointer
