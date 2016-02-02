@@ -5,8 +5,8 @@ button
   -webkit-font-smoothing: antialiased
   background-color: $white
   border-radius: 0
-  border: rem(2) $gray solid
-  color: $gray
+  border: rem(2) lighten($gray, 50%) solid
+  color: lighten($gray, 50%)
   cursor: pointer
   display: inline-block
   font-family: $heading-font-family
@@ -30,7 +30,7 @@ button
 select
   height: rem(30)
   margin-bottom: rem(25)
-  border: 1px solid $gray
+  border: 1px solid lighten($gray, 50%)
   border-radius: rem(5)
   background-color: $white
   outline: none
@@ -42,13 +42,13 @@ select
     right: rem(20)
     bottom: rem(20)
     height: rem(30)
-    border: 1px solid $gray
+    border: 1px solid lighten($gray, 50%)
     border-radius: rem(5)
     background-color: $white
     outline: none
     cursor: pointer
     text-align: center
-    color: $gray
+    color: lighten($gray, 50%)
     +media($mobile)
       +span-columns(11)
     option
