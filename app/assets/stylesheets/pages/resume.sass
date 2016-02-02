@@ -2,7 +2,7 @@ section.m-resume-layout
   .wrapper
     +row
     +outer-container
-    +media($desktop)
+    +desktop
       padding: 0 rem(20)
     article
       margin: 0
@@ -10,7 +10,7 @@ section.m-resume-layout
       padding-bottom: rem(50)
       +span-columns(9)
       +shift(3)
-      +media($mobile)
+      +mobile
         +span-columns(12)
         +shift(0)
       figure
@@ -27,7 +27,7 @@ section.m-resume-layout
           position: fixed
           bottom: rem(250)
           right: 0
-          +media($mobile)
+          +mobile
             transform: inherit
             position: inherit
             bottom: 0
@@ -40,7 +40,7 @@ section.m-resume-layout
       right: 0
       bottom: 0
       left: 5%
-      +media($mobile)
+      +mobile
         position: inherit
         padding-top: rem(100)
       h2

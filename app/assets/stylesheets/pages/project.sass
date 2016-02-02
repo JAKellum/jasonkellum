@@ -2,7 +2,7 @@ section.m-project-layout
   .wrapper
     +row
     +outer-container
-    +media($desktop)
+    +desktop
       padding: 0 rem(20)
     article
       .coming-soon
@@ -18,21 +18,21 @@ section.m-project-layout
         +span-columns(12)
         padding-top: rem(150)
         padding-bottom: rem(100)
-        +media($tablet)
+        +tablet
           padding-top: 0
           padding-bottom: 0
         .item-text
           +span-columns(4)
           padding-top: rem(100)
           padding-right: rem(40)
-          +media($tablet)
+          +tablet
             +span-columns(12)
             padding-right: 0
           h5
             padding-top: 0
         .item-image
           +span-columns(8)
-          +media($tablet)
+          +tablet
             +span-columns(12)
             padding-top: rem(50)
             margin-bottom: rem(50)
@@ -45,31 +45,31 @@ section.m-project-layout
             display: block
             margin: 0 auto
             box-shadow: rem(5) rem(5) rem(5) lighten($gray, 60%)
-          +media($tablet)
+          +tablet
             +span-columns(7)
-          +media($mobile)
+          +mobile
             +span-columns(12)
           .desk
             display: inherit
-            +media($tablet)
+            +tablet
               display: none
           .tab
             display: none
-            +media($tablet)
+            +tablet
               display: inherit
-            +media($mobile)
+            +mobile
               display: none
           .mob
             display: none
-            +media($mobile)
+            +mobile
               display: inherit
         .item-text
           +span-columns(5)
           padding-top: rem(100)
           padding-left: rem(40)
-          +media($tablet)
+          +tablet
             +span-columns(5)
-          +media($mobile)
+          +mobile
             +span-columns(12)
             padding-top: 0
             padding-left: 0
@@ -84,7 +84,7 @@ section.m-project-layout
         .item-text
           +span-columns(5)
           padding-top: rem(200)
-          +media($tablet)
+          +tablet
             +span-columns(12)
             padding-top: 0
           h3
@@ -92,7 +92,7 @@ section.m-project-layout
             padding-bottom: rem(15)
         .item-image
           +span-columns(7)
-          +media($tablet)
+          +tablet
             +span-columns(12)
       &.phone
         +span-columns(12)
@@ -100,9 +100,9 @@ section.m-project-layout
         .item-text
           +span-columns(5)
           padding-top: rem(250)
-          +media($tablet)
+          +tablet
             +span-columns(6)
-          +media($mobile)
+          +mobile
             +span-columns(12)
             padding-top: 0
           h3
@@ -111,11 +111,11 @@ section.m-project-layout
         .item-image
           +span-columns(5)
           +shift(2)
-          +media($tablet)
+          +tablet
             +span-columns(6)
             +shift(0)
             padding-top: rem(75)
-          +media($mobile)
+          +mobile
             +span-columns(10)
             +shift(1)
       &.compare
@@ -123,12 +123,12 @@ section.m-project-layout
         padding-bottom: rem(40)
         .item-image
           +span-columns(6)
-          +media($mobile)
+          +mobile
             +span-columns(12)
           select
             +span-columns(6)
             +shift(3)
-            +media($mobile)
+            +mobile
               +span-columns(12)
               +shift(0)
             option
@@ -139,7 +139,7 @@ section.m-project-layout
             +shift(2)
             padding: 0 !important
             box-shadow: rem(5) rem(5) rem(5) lighten($gray, 60%)
-            +media($tablet)
+            +tablet
               +span-columns(12)
               +shift(0)
           h5
@@ -147,5 +147,5 @@ section.m-project-layout
             padding-bottom: rem(20)
           &:nth-of-type(1)
             display: inherit
-            +media($mobile)
+            +mobile
               display: none
