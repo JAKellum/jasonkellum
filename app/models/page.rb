@@ -3,8 +3,8 @@ class Page
     def list
       [
         :onespark,
-        :wayfind,
-        :phil,
+        # :wayfind,
+        # :phil,
         :resumebot,
         :ignite,
         :txtout,
