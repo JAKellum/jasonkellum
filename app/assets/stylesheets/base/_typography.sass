@@ -1,10 +1,10 @@
 body
   +font-feature-settings("kern", "liga", "pnum")
+  +font-size($base-font-size)
   -webkit-font-smoothing: antialiased
   color: $base-font-color
   font:
     family: $base-font-family
-    size: $base-font-size
   line-height: $base-line-height
 
 h1,
@@ -13,31 +13,30 @@ h3,
 h4,
 h5,
 h6
+  +font-size($base-font-size)
   font:
     family: $heading-font-family
-    size: $base-font-size
   line-height: $heading-line-height
   margin: 0 0 $small-spacing
   color: darken($gray, 20%)
   font-weight: normal
 
 h1
+  +font-size($base-font-size * 3)
   font:
     family: $CGL
-    size: $base-font-size * 3
 
 h2
+  +font-size($base-font-size * 2.5)
   font:
     family: $CGL
-    size: $base-font-size * 2.5
 
 h4
   font:
     weight: bold
 
 h3
-  font:
-    size: $base-font-size * 1.25
+  +font-size($base-font-size * 1.25)
   color: darken($gray, 20%)
 
 h5
@@ -45,10 +44,12 @@ h5
   padding-bottom: rem(15)
 
 p
+  +font-size($base-font-size)
   margin: 0 0 $small-spacing * 6
 
 a
   +transition
+  +font-size($base-font-size)
   font-family: $CGB
   color: $action-color
   text-decoration: none
