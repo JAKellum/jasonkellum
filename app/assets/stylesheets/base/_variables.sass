@@ -40,6 +40,12 @@ $base-background-color: $white
 $base-font-color: darken($gray, 20%)
 $action-color: $red
 
+// Opacity
+=opacity($opacity)
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity = $opacity-ie)
+
 // Border
 $base-border-color: lighten($gray, 60%)
 $base-border: rem(1) solid $base-border-color

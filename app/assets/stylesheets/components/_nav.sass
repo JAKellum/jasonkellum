@@ -13,6 +13,7 @@ nav
     &:hover
       color: darken($red, 25%)
 .overlay
+  +opacity(0.9)
   z-index: 1000
   position: fixed
   width: 100%
@@ -20,7 +21,6 @@ nav
   top: 0
   left: 0
   background: $red
-  opacity: .9
   .ion-home
     margin-left: 0
   section
@@ -75,13 +75,13 @@ nav
     background: darken($red, 25%)
 
 #nav-icon span
+  +opacity(1)
   display: block
   position: absolute
   height: rem(3)
   width: 100%
   background: lighten($gray, 50%)
   border-radius: rem(10)
-  opacity: 1
   left: 0
   -webkit-transform: rotate(0deg)
   -moz-transform: rotate(0deg)
