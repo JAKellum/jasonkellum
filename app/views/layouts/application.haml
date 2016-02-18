@@ -5,7 +5,7 @@
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
     %title= content_for?(:title) ? yield(:title) : "Jason Kellum | Portfolio"
     = stylesheet_link_tag "application"
-    = javascript_include_tag "analytics" #if Rails.env.production?
+    = javascript_include_tag "analytics" if Rails.env.production?
     = csrf_meta_tags
   %body
     #main.m-scene
