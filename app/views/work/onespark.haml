@@ -19,30 +19,30 @@
         %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => asset_path('/assets/work/os-devices.png')}
           %source{ :src => asset_path('os-devices.mp4'), :type => "video/mp4"}
           %source{ :src => asset_path('os-devices.webm'), :type => "video/webm"}
-          %img{ :src => asset_path('/assets/work/os-devices.png')}
+          = image_tag('/assets/work/os-devices.png', {:srcset => '/assets/work/os-devices.png 1x, /assets/work/os-devices@2x.png 2x', :alt => 'One spark creator profiles.'})
     %article.image
       .item-image.options
         .one
           .desk
-            %img{:src => '/assets/work/os-signin-desktop.png', :srcset => '/assets/work/os-signin-desktop.png 1x, /assets/work/os-signin-desktop@2x.png 2x', :alt => 'Sign In'}
+            = image_tag('/assets/work/os-signin-desktop.png', {:srcset => '/assets/work/os-signin-desktop.png 1x, /assets/work/os-signin-desktop@2x.png 2x', :alt => 'Sign In'})
           .tab
-            %img{:src => '/assets/work/os-signin-tablet.png', :srcset => '/assets/work/os-signin-tablet.png 1x, /assets/work/os-signin-tablet@2x.png 2x', :alt => 'Sign In'}
+            = image_tag('/assets/work/os-signin-tablet.png', {:srcset => '/assets/work/os-signin-tablet.png 1x, /assets/work/os-signin-tablet@2x.png 2x', :alt => 'Sign In'})
           .mob
-            %img{:src => '/assets/work/os-signin-mobile.png', :srcset => '/assets/work/os-signin-mobile.png 1x, /assets/work/os-signin-mobile@2x.png 2x', :alt => 'Sign In'}
+            = image_tag('/assets/work/os-signin-mobile.png', {:srcset => '/assets/work/os-signin-mobile.png 1x, /assets/work/os-signin-mobile@2x.png 2x', :alt => 'Sign In'})
         .two.hide
           .desk
-            %img{:src => '/assets/work/os-register-desktop.png', :srcset => '/assets/work/os-register-desktop.png 1x, /assets/work/os-register-desktop@2x.png 2x', :alt => 'Register'}
+            = image_tag('/assets/work/os-register-desktop.png', {:srcset => '/assets/work/os-register-desktop.png 1x, /assets/work/os-register-desktop@2x.png 2x', :alt => 'Register'})
           .tab
-            %img{:src => '/assets/work/os-register-tablet.png', :srcset => '/assets/work/os-register-tablet.png 1x, /assets/work/os-register-tablet@2x.png 2x', :alt => 'Register'}
+            = image_tag('/assets/work/os-register-tablet.png', {:srcset => '/assets/work/os-register-tablet.png 1x, /assets/work/os-register-tablet@2x.png 2x', :alt => 'Register'})
           .mob
-            %img{:src => '/assets/work/os-register-mobile.png', :srcset => '/assets/work/os-register-mobile.png 1x, /assets/work/os-register-mobile@2x.png 2x', :alt => 'Register'}
+            = image_tag('/assets/work/os-register-mobile.png', {:srcset => '/assets/work/os-register-mobile.png 1x, /assets/work/os-register-mobile@2x.png 2x', :alt => 'Register'})
         .three.hide
           .desk
-            %img{:src => '/assets/work/os-forgotpw-desktop.png', :srcset => '/assets/work/os-forgotpw-desktop.png 1x, /assets/work/os-forgotpw-desktop@2x.png 2x', :alt => 'Forgot Password'}
+            = image_tag('/assets/work/os-forgotpw-desktop.png', {:srcset => '/assets/work/os-forgotpw-desktop.png 1x, /assets/work/os-forgotpw-desktop@2x.png 2x', :alt => 'Forgot Password'})
           .tab
-            %img{:src => '/assets/work/os-forgotpw-tablet.png', :srcset => '/assets/work/os-forgotpw-tablet.png 1x, /assets/work/os-forgotpw-tablet@2x.png 2x', :alt => 'Forgot Password'}
+            = image_tag('/assets/work/os-forgotpw-tablet.png', {:srcset => '/assets/work/os-forgotpw-tablet.png 1x, /assets/work/os-forgotpw-tablet@2x.png 2x', :alt => 'Forgot Password'})
           .mob
-            %img{:src => '/assets/work/os-forgotpw-mobile.png', :srcset => '/assets/work/os-forgotpw-mobile.png 1x, /assets/work/os-forgotpw-mobile@2x.png 2x', :alt => 'Forgot Password'}
+            = image_tag('/assets/work/os-forgotpw-mobile.png', {:srcset => '/assets/work/os-forgotpw-mobile.png 1x, /assets/work/os-forgotpw-mobile@2x.png 2x', :alt => 'Forgot Password'})
       .item-text
         %h3 Authentication Pages
         %select.div-toggler{'data-target' => '.options'}
@@ -52,15 +52,15 @@
     %article.image
       .item-image.toggle-view
         .desk
-          %img{:src => '/assets/work/os-launchpad-desktop.png', :srcset => '/assets/work/os-launchpad-desktop.png 1x, /assets/work/os-launchpad-desktop@2x.png 2x', :alt => 'Launchpad'}
+          = image_tag('/assets/work/os-launchpad-desktop.png', {:srcset => '/assets/work/os-launchpad-desktop.png 1x, /assets/work/os-launchpad-desktop@2x.png 2x', :alt => 'Launchpad'})
         .tab
-          %img{:src => '/assets/work/os-launchpad-tablet.png', :srcset => '/assets/work/os-launchpad-tablet.png 1x, /assets/work/os-launchpad-tablet@2x.png 2x', :alt => 'Launchpad'}
+          = image_tag('/assets/work/os-launchpad-tablet.png', {:srcset => '/assets/work/os-launchpad-tablet.png 1x, /assets/work/os-launchpad-tablet@2x.png 2x', :alt => 'Launchpad'})
         .mob
-          %img{:src => '/assets/work/os-launchpad-mobile.png', :srcset => '/assets/work/os-launchpad-mobile.png 1x, /assets/work/os-launchpad-mobile@2x.png 2x', :alt => 'Launchpad'}
+          = image_tag('/assets/work/os-launchpad-mobile.png', {:srcset => '/assets/work/os-launchpad-mobile.png 1x, /assets/work/os-launchpad-mobile@2x.png 2x', :alt => 'Launchpad'})
       .item-text
         %h3 Launchpad
     %article.image
       .item-image.toggle-view
-        %img{:src => '/assets/work/os-profile-sketch.png', :srcset => '/assets/work/os-profile-sketch.png 1x, /assets/work/os-profile-sketch@2x.png 2x', :alt => 'Sketch Artboards'}
+        = image_tag('/assets/work/os-profile-sketch.png', {:srcset => '/assets/work/os-profile-sketch.png 1x, /assets/work/os-profile-sketch@2x.png 2x', :alt => 'Sketch Artboards'})
       .item-text
         %h3 Sketch artboards synced with Marvel
