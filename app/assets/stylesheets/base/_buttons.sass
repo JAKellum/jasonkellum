@@ -2,18 +2,18 @@
 button
   +appearance(none)
   +transition
+  +rem(padding, 20px)
   -webkit-font-smoothing: antialiased
   background-color: $white
   border-radius: 0
-  border: rem(2) $gray solid
-  color: $gray
+  border: rem(2) lighten($gray, 50%) solid
+  color: lighten($gray, 50%)
   cursor: pointer
   display: inline-block
   font-family: $heading-font-family
   font-size: $base-font-size
   font-weight: normal
   line-height: 1
-  padding: 0.75em 1em
   text-decoration: none
   user-select: none
   vertical-align: middle
@@ -24,34 +24,33 @@ button
     border-color: darken($red, 15%)
     color: #fff
   &:disabled
+    +opacity(0.5)
     cursor: not-allowed
-    opacity: 0.5
 
 select
-  height: rem(30)
-  margin-bottom: rem(25)
-  border: 1px solid $gray
-  border-radius: rem(5)
+  +rem(height, 30px)
+  +rem(margin-bottom, 25px)
+  +rem(border-radius, 5px)
+  border: rem(1) solid lighten($gray, 50%)
   background-color: $white
   outline: none
   cursor: pointer
   text-align: center
   &.render
     +span-columns(3)
+    +rem(height, 30px)
+    +rem(right, 20px)
+    +rem(bottom, 20px)
+    +rem(border-radius, 5px)
     position: fixed
-    right: rem(20)
-    bottom: rem(20)
-    height: rem(30)
-    border: 1px solid $gray
-    border-radius: rem(5)
+    border: rem(1) solid lighten($gray, 50%)
     background-color: $white
     outline: none
     cursor: pointer
     text-align: center
-    color: $gray
-    +media($mobile)
+    color: lighten($gray, 50%)
+    +mobile
       +span-columns(11)
     option
+      +font-size($base-font-size * 1.75)
       text-align: center
-      font:
-        size: rem(28)

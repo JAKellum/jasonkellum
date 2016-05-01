@@ -2,11 +2,17 @@ section.m-project-layout
   .wrapper
     +row
     +outer-container
-    +media($desktop)
-      padding: 0 rem(20)
+    +desktop
+      +rem(padding-top, 0px)
+      +rem(padding-right, 20px)
+      +rem(padding-bottom, 0px)
+      +rem(padding-left, 20px)
     article
       .coming-soon
-        padding: rem(75) rem(0) rem(50) rem(0)
+        +rem(padding-top, 75px)
+        +rem(padding-right, 0px)
+        +rem(padding-bottom, 50px)
+        +rem(padding-left, 0px)
         position: absolute
         top: 40%
         bottom: 0
@@ -16,137 +22,139 @@ section.m-project-layout
           text-align: center
       &.intro
         +span-columns(12)
-        padding-top: rem(150)
-        padding-bottom: rem(100)
-        +media($tablet)
-          padding-top: 0
-          padding-bottom: 0
+        +rem(padding-top, 150px)
+        +rem(padding-bottom, 100px)
+        +tablet
+          +rem(padding-top, 0px)
+          +rem(padding-bottom, 0px)
         .item-text
           +span-columns(4)
-          padding-top: rem(100)
-          padding-right: rem(40)
-          +media($tablet)
+          +rem(padding-top, 100px)
+          +rem(padding-right, 40px)
+          +tablet
             +span-columns(12)
-            padding-right: 0
+            +rem(padding-right, 0px)
           h5
-            padding-top: 0
+            +rem(padding-top, 0px)
         .item-image
           +span-columns(8)
-          +media($tablet)
+          +tablet
             +span-columns(12)
-            padding-top: rem(50)
-            margin-bottom: rem(50)
+            +rem(padding-top, 50px)
+            +rem(margin-bottom, 50px)
       &.image
         +span-columns(12)
-        margin: 0 0 rem(50) 0
+        +rem(margin-top, 0px)
+        +rem(margin-right, 0px)
+        +rem(margin-bottom, 50px)
+        +rem(margin-left, 0px)
         .item-image
           +span-columns(7)
           img
             display: block
             margin: 0 auto
-            box-shadow: rem(5) rem(5) rem(5) $light-gray
-          +media($tablet)
+            box-shadow: rem(5) rem(5) rem(5) lighten($gray, 60%)
+          +tablet
             +span-columns(7)
-          +media($mobile)
+          +mobile
             +span-columns(12)
           .desk
             display: inherit
-            +media($tablet)
+            +tablet
               display: none
           .tab
             display: none
-            +media($tablet)
+            +tablet
               display: inherit
-            +media($mobile)
+            +mobile
               display: none
           .mob
             display: none
-            +media($mobile)
+            +mobile
               display: inherit
         .item-text
           +span-columns(5)
-          padding-top: rem(100)
-          padding-left: rem(40)
-          +media($tablet)
+          +rem(padding-top, 100px)
+          +rem(padding-left, 40px)
+          +tablet
             +span-columns(5)
-          +media($mobile)
+          +mobile
             +span-columns(12)
-            padding-top: 0
-            padding-left: 0
+            +rem(padding-top, 0px)
+            +rem(padding-left, 0px)
           select
-            margin-top: rem(20)
+            +rem(margin-top, 20px)
           h3
-            padding-top: rem(20)
-            padding-bottom: rem(20)
+            +rem(padding-top, 20px)
+            +rem(padding-bottom, 20px)
       &.tablet
         +span-columns(12)
-        padding-bottom: rem(75)
+        +rem(padding-bottom, 75px)
         .item-text
           +span-columns(5)
-          padding-top: rem(200)
-          +media($tablet)
+          +rem(padding-top, 200px)
+          +tablet
             +span-columns(12)
-            padding-top: 0
+            +rem(padding-top, 0px)
           h3
-            padding-top: rem(20)
-            padding-bottom: rem(15)
+            +rem(padding-top, 20px)
+            +rem(padding-bottom, 15px)
         .item-image
           +span-columns(7)
-          +media($tablet)
+          +tablet
             +span-columns(12)
       &.phone
         +span-columns(12)
-        padding-bottom: rem(40)
+        +rem(padding-bottom, 40px)
         .item-text
           +span-columns(5)
-          padding-top: rem(250)
-          +media($tablet)
+          +rem(padding-top, 250px)
+          +tablet
             +span-columns(6)
-          +media($mobile)
+          +mobile
             +span-columns(12)
-            padding-top: 0
+            +rem(padding-top, 0px)
           h3
-            padding-top: rem(20)
-            padding-bottom: rem(15)
+            +rem(padding-top, 20px)
+            +rem(padding-bottom, 15px)
         .item-image
           +span-columns(5)
           +shift(2)
-          +media($tablet)
+          +tablet
             +span-columns(6)
             +shift(0)
-            padding-top: rem(75)
-          +media($mobile)
+            +rem(padding-top, 75px)
+          +mobile
             +span-columns(10)
             +shift(1)
       &.compare
         +span-columns(12)
-        padding-bottom: rem(40)
+        +rem(padding-bottom, 40px)
         .item-image
           +span-columns(6)
-          +media($mobile)
+          +mobile
             +span-columns(12)
           select
             +span-columns(6)
             +shift(3)
-            +media($mobile)
+            +mobile
               +span-columns(12)
               +shift(0)
             option
+              +font-size($base-font-size * 1.75)
               text-align: center
-              font:
-                size: rem(28)
           img
             +span-columns(8)
             +shift(2)
             padding: 0 !important
-            box-shadow: rem(5) rem(5) rem(5) $light-gray
-            +media($tablet)
+            box-shadow: rem(5) rem(5) rem(5) lighten($gray, 60%)
+            +tablet
               +span-columns(12)
               +shift(0)
           h5
+            +rem(padding-bottom, 20px)
             text-align: center
-            padding-bottom: rem(20)
           &:nth-of-type(1)
             display: inherit
-            +media($mobile)
+            +mobile
               display: none

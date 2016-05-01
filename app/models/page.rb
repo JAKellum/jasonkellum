@@ -2,6 +2,9 @@ class Page
   class << self
     def list
       [
+        :onespark,
+        # :wayfind,
+        # :phil,
         :resumebot,
         :ignite,
         :txtout,

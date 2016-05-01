@@ -8,25 +8,26 @@ nav
     margin-left: rem(20)
     font-size: rem(24)
     line-height: 1
-    color: $gray
+    color: lighten($gray, 50%)
     z-index: 4000
     &:hover
-      color: $dark-red
+      color: darken($red, 25%)
 .overlay
+  +display(flex)
+  +justify-content(center)
+  +align-items(center)
   z-index: 1000
   position: fixed
   width: 100%
   height: 100%
   top: 0
   left: 0
-  background: $red-o
+  background: rgba($red, .9)
   .ion-home
     margin-left: 0
   section
-    +span-columns(12)
     +animation(fadeIn 1s)
     text-align: center
-    margin-top: 30vh
     img
       border-radius: 50%
       max-width: rem(100)
@@ -35,9 +36,9 @@ nav
     h2
       margin-top: rem(20)
     a
-      color: $gray
+      color: lighten($gray, 50%)
       &:hover
-        color: $dark-red
+        color: darken($red, 25%)
     ul
       display: inline-block
       max-width: rem(300)
@@ -49,9 +50,9 @@ nav
         i
           +transition
           font-size: rem(42)
-          color: $gray
+          color: lighten($gray, 50%)
           &:hover
-            color: $dark-red
+            color: darken($red, 25%)
 
 // Hamburger CSS
 #nav-icon
@@ -71,16 +72,16 @@ nav
   transition: .5s ease-in-out
   cursor: pointer
   &:hover span
-    background: $dark-red
+    background: darken($red, 25%)
 
 #nav-icon span
+  +opacity(1)
   display: block
   position: absolute
   height: rem(3)
   width: 100%
-  background: $gray
+  background: lighten($gray, 50%)
   border-radius: rem(10)
-  opacity: 1
   left: 0
   -webkit-transform: rotate(0deg)
   -moz-transform: rotate(0deg)
