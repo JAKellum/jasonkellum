@@ -2,11 +2,24 @@
   .wrapper.m-page.scene_element.scene_element--fadeinright
     %article.intro
       .item-text
-        %h2 One Spark
-        %h5 2016 Updates
-        %p Writeup coming soon...
+        %h2 One Spark 2016
+        %h5 The World's Largest Crowdfunding Festival
+        %p Connecting Creators with the resources they need to bring their ideas to life through crowdfunding, created and hosted in Jacksonville, FL. I had the opportunity to redesign the 2016 dashboard and project application flow.
+        %cite
+          %ul
+            %li
+              Design & Front-End:
+              %a{:href => "https://twitter.com/jasonakellum", :target => "_blank"}Jason Kellum
+            %li
+              Development:
+              %a{:href => "https://twitter.com/jasoncummings86", :target => "_blank"}Jason Cummings
+              &plus;
+              %a{:href => "http://cronfu.com/", :target => "_blank"}Jimmy Thai
       .item-image
-        %img{:src => '/assets/work/os-devices.gif', :srcset => '/assets/work/os-devices.gif 1x, /assets/work/os-devices@2x.gif 2x', :alt => 'One Spark Website'}
+        %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => asset_path('/assets/work/os-devices.png')}
+          %source{ :src => asset_path('os-devices.mp4'), :type => "video/mp4"}
+          %source{ :src => asset_path('os-devices.webm'), :type => "video/webm"}
+          %img{ :src => asset_path('/assets/work/os-devices.png')}
     %article.image
       .item-image.options
         .one
@@ -36,7 +49,6 @@
           %option{'data-show' => '.one', :value => 'one'} Sign In
           %option{'data-show' => '.two', :value => 'two'}  Register
           %option{'data-show' => '.three', :value => 'three'}  Forgot Password
-        %p Text
     %article.image
       .item-image.toggle-view
         .desk
@@ -47,4 +59,8 @@
           %img{:src => '/assets/work/os-launchpad-mobile.png', :srcset => '/assets/work/os-launchpad-mobile.png 1x, /assets/work/os-launchpad-mobile@2x.png 2x', :alt => 'Launchpad'}
       .item-text
         %h3 Launchpad
-        %p Text
+    %article.image
+      .item-image.toggle-view
+        %img{:src => '/assets/work/os-profile-sketch.png', :srcset => '/assets/work/os-profile-sketch.png 1x, /assets/work/os-profile-sketch@2x.png 2x', :alt => 'Sketch Artboards'}
+      .item-text
+        %h3 Sketch artboards synced with Marvel
