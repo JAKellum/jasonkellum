@@ -19,17 +19,17 @@
       .item-image
         = image_tag('work/rb-shirt.png')
     %article.image
-      .item-image.options
-        .print
+      .item-image.resumebot-toggle
+        .resumebot-one
           = image_tag('work/rb-intro.jpg')
-        .print-two.hide
+        .resumebot-two.hide
           = image_tag('work/rb-faq.jpg')
       .item-text
-        %h3 PDF Support Pages
+        %h3 PDF Support Resources
         %p
           While at
           %a{:href => "http://www.ignitewithus.com/", :target => "_blank"}Ignite
-          we place an emphasis on changing the recruiter environment through digital means, there is still and may always be, a need for printed materials. These 8&frac12; x 11 printouts were created to provide additional R&eacute;sum&eacute;Bot support resources for business units acquiring how to use this tool.
+          we place an emphasis on improving the recruiter environment through digital means, there is and may always be, a need for printed materials. These 8&frac12; x 11 printouts were created to provide additional R&eacute;sum&eacute;Bot support resources for business units acquiring how to use this tool.
         %cite
           %ul
             %li
@@ -38,6 +38,6 @@
             %li
               Design:
               %a{:href => "/"}Jason Kellum
-        %select.div-toggler{'data-target' => '.options'}
-          %option{'data-show' => '.print', :value => 'print'} Introduction One-Pager
-          %option{'data-show' => '.print-two', :value => 'print-two'}  FAQ One-Pager
+        %select.div-toggler{'data-target' => '.resumebot-toggle'}
+          %option{'data-show' => '.resumebot-one', :value => 'resumebot-one'} Introduction One-Pager
+          %option{'data-show' => '.resumebot-two', :value => 'resumebot-two'}  FAQ One-Pager

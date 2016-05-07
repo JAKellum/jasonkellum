@@ -2,11 +2,12 @@
   .wrapper.m-page.scene_element.scene_element--fadeinright
     %article.intro
       .item-text
-        %h2 One Spark 2016
+        %h2 One Spark
         %h5 The World's Largest Crowdfunding Festival
         %p
           %a{:href => "http://onespark.com/", :target => "_blank"}One Spark
-          connects creators with the resources they need to bring their ideas to life through crowdfunding. I had the opportunity to help redesign the 2016 dashboard and project application flow by creating experiences and designs that would give the brand a fresh visual update and better guide the user towards the actions they need to make, all while still sitting in well with existing UI elements and already defined processes.
+          connects creators with the resources they need to bring their ideas to life through crowdfunding.
+        %p I had the opportunity to help redesign the 2016 dashboard and project application flow by creating experiences and designs that would give the brand a fresh visual update and better guide the user towards the actions they need to make, all while still sitting in well with existing UI elements and already defined processes.
         %cite
           %ul
             %li
@@ -23,22 +24,22 @@
           %source{ :src => asset_path('os-devices.webm'), :type => "video/webm"}
           = image_tag('work/os-devices.png', {:alt => 'One spark creator profiles.'})
     %article.image
-      .item-image.options
-        .one
+      .item-image.onespark-toggle
+        .onespark-one
           .desk
             = image_tag('work/os-signin-desktop.png', {:alt => 'Sign In'})
           .tab
             = image_tag('work/os-signin-tablet.png', {:alt => 'Sign In'})
           .mob
             = image_tag('work/os-signin-mobile.png', {:alt => 'Sign In'})
-        .two.hide
+        .onespark-two.hide
           .desk
             = image_tag('work/os-register-desktop.png', {:alt => 'Register'})
           .tab
             = image_tag('work/os-register-tablet.png', {:alt => 'Register'})
           .mob
             = image_tag('work/os-register-mobile.png', {:alt => 'Register'})
-        .three.hide
+        .onespark-three.hide
           .desk
             = image_tag('work/os-forgotpw-desktop.png', {:alt => 'Forgot Password'})
           .tab
@@ -48,10 +49,10 @@
       .item-text
         %h3 Authentication Pages
         %p Since the authentication pages are some of the first opportunities to interact with our users, tackling these pages was the first line of business. We wanted to remove any barriers or unnecessary noise that could distract or prevent the user from accomplishing their only goal on these screens &mdash; to sign in.
-        %select.div-toggler{'data-target' => '.options'}
-          %option{'data-show' => '.one', :value => 'one'} Sign In
-          %option{'data-show' => '.two', :value => 'two'}  Register
-          %option{'data-show' => '.three', :value => 'three'}  Forgot Password
+        %select.div-toggler{'data-target' => '.onespark-toggle'}
+          %option{'data-show' => '.onespark-one', :value => 'onespark-one'} Sign In
+          %option{'data-show' => '.onespark-two', :value => 'onespark-two'}  Register
+          %option{'data-show' => '.onespark-three', :value => 'onespark-three'}  Forgot Password
     %article.image
       .item-image.toggle-view
         .desk
