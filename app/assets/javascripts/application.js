@@ -24,11 +24,7 @@ $(document).ready(function() {
   		 $(this).toggleClass('open');
   	});
 
-<<<<<<< HEAD
     if ($('.div-toggler').length > 0) {
-=======
-    if ($('.onespark, .resumebot, .ignite, .txtout, .aiga').length > 0) {
->>>>>>> jk-update-txtout
 
       $('select.div-toggler').change(function() {
         var target = $(this).data('target');
